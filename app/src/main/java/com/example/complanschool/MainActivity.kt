@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.complanschool.auth.LoginActivity
 import com.example.complanschool.databinding.ActivityMainBinding
-import com.example.complanschool.laporan.ListLaporanActivity
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
