@@ -1,3 +1,92 @@
 <resources>
     <string name="app_name">ComPlanSchool</string>
+<<<<<<< HEAD
+=======
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    //Yang sering digunakan
+    <string name="txt_name">Nama</string>
+    <string name="txt_major">Jurusan</string>
+    <string name="txt_school_code">Kode Sekolah</string>
+    <string name="txt_send">Kirim</string>
+    <string name="txt_desc">Isi Laporan</string>
+    <string name="txt_email">Alamat Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_register">Daftar</string>
+    <string name="txt_login">Masuk</string>
+    <string name="txt_sign_out">Keluar</string>
+    <string name="txt_or">atau</string>
+    <string name="txt_category">Jenis Pel</string>
+    <string name="txt_form_warning">Mohon jangan berikan laporan palsu!</string>
+
+    //Untuk Hint pada textfield
+    <string name="txt_hint_name">Nama Anda</string>
+    <string name="txt_hint_major">Jurusan Anda</string>
+    <string name="txt_hint_school_code">Kode Sekolah</string>
+    <string name="txt_hint_email">1234@mail.com</string>
+    <string name="txt_hint_password">Password</string>
+    <string name="txt_hint_confirm_password">Confirm Password</string>
+    <string name="txt_hint_name_facility">Keran Air</string>
+    <string name="txt_hint_location_facility">Gerbang masuk sekolah</string>
+    <string name="txt_hint_desc">Isi deskripsi disini</string>
+
+    //Untuk Activity Input Profile
+    <string name="aip_title">Lengkapi Profil Anda</string>
+    <string name="aip_subtitle">Masukan semua field dengan benar dan jelas</string>
+
+    //Untuk Activity Laporan Fasilitas
+    <string name="alf_title">Laporan Fasilitas</string>
+    <string name="alf_facility_name">Nama Fasilitas</string>
+    <string name="alf_facility_location">Lokasi Fasilitas</string>
+
+    //Untuk Activity Laporan Person
+    <string name="alp_title">Laporan Pelanggar</string>
+    <string name="alp_person_name">Nama Pelanggar</string>
+    <string name="alp_person_category">Jenis Pelanggaran</string>
+
+    //Untuk Activity Login
+    <string name="al_title">Selamat Datang!</string>
+    <string name="al_subtitle">Sebelum lanjut masuk terlebih dahulu</string>
+
+    //Untuk Activity Register
+    <string name="ar_title">Daftar Pengguna baru</string>
+    <string name="ar_subtitle">Harap ingat alamat email dan password anda</string>
+
+    //Untuk Fragment History
+    <string name="fh_title">Riwayat Laporan</string>
+    <string name="fh_subtitle">Semua jenis laporan yang telah anda kirim</string>
+    <string name="tab_person">Pelanggaran</string>
+    <string name="tab_facility">Fasilitas</string>
+
+    //Untuk Fragment Home
+    <string name="fho_title">Hai!, Silahkan pilih menu dibawah</string>
+    <string name="fho_subtitle">harap masukan segala sesuatu dengan benar dan jujur</string>
+    <string name="tv_school_name">TV_Nama_Sekolah</string>
+    <string name="tv_location">TV_Lokasi_Sekolah</string>
+
+    //Untuk Fragment Profile
+    <string name="tv_name">TV_Name</string>
+    <string name="tv_major">TV_Major</string>
+    <string name="tv_code_school">TV_Code_School</string>
+
+    //Untuk ImageView
+    <string name="desc_fh_img1">Image Untuk Profile</string>
+    <string name="desc_alf_img1">Image Untuk Button Image</string>
+    <string name="desc_alf_img2">Image Untuk Button Back</string>
+    <string name="desc_alp_img1">Image Untuk Button Back</string>
+    <string name="desc_fho_img1">Image Untuk Button Image</string>
+    <string name="desc_fho_img2">Image Untuk Button Menu 1</string>
+    <string name="desc_fho_img3">Image Untuk Button Menu 2</string>
+
+    //Untuk Item History
+    <string name="ih_name">TV_Name</string>
+    <string name="ih_category">TV_Kategori</string>
+    <string name="ih_time">TV_Tanggal</string>
+
+    //Untuk Custom View
+    <string name="cv_btn_google">Dengan Google</string>
+>>>>>>> b0d136a (Menambahkan banyak fitur dari mulai membuat activity login, activity register, activity home dengan bottom navigation, activity input profile, activity list laporan person, activity list laporan fasilitas dan semuanya telah tersambung dengan firebase)
 </resources>
