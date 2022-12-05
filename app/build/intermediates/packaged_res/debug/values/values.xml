@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_50">#747678</color>
+    <color name="blue_dark">#2C3B98</color>
+    <color name="blue_light">#5B67AE</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_fa">#FAFAFA</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="aip_subtitle">Masukan semua field dengan benar dan jelas</string>
+    <string name="aip_title">Lengkapi Profil Anda</string>
+    <string name="al_subtitle">Sebelum lanjut masuk terlebih dahulu</string>
+    <string name="al_title">Selamat Datang!</string>
+    <string name="alf_facility_location">Lokasi Fasilitas</string>
+    <string name="alf_facility_name">Nama Fasilitas</string>
+    <string name="alf_title">Laporan Fasilitas</string>
+    <string name="alp_person_category">Jenis Pelanggaran</string>
+    <string name="alp_person_name">Nama Pelanggar</string>
+    <string name="alp_title">Laporan Pelanggar</string>
+    <string name="app_name">ComPlanSchool</string>
+    <string name="ar_subtitle">Harap ingat alamat email dan password anda</string>
+    <string name="ar_title">Daftar Pengguna baru</string>
+    <string name="cv_btn_google">Dengan Google</string>
+    <string name="default_web_client_id" translatable="false">911917534554-1jopeephgj7saamtl3fb28anuifjh6qu.apps.googleusercontent.com</string>
+    <string name="desc_alf_img1">Image Untuk Button Image</string>
+    <string name="desc_alf_img2">Image Untuk Button Back</string>
+    <string name="desc_alp_img1">Image Untuk Button Back</string>
+    <string name="desc_fh_img1">Image Untuk Profile</string>
+    <string name="desc_fho_img1">Image Untuk Button Image</string>
+    <string name="desc_fho_img2">Image Untuk Button Menu 1</string>
+    <string name="desc_fho_img3">Image Untuk Button Menu 2</string>
+    <string name="fh_subtitle">Semua jenis laporan yang telah anda kirim</string>
+    <string name="fh_title">Riwayat Laporan</string>
+    <string name="fho_subtitle">harap masukan segala sesuatu dengan benar dan jujur</string>
+    <string name="fho_title">Hai!, Silahkan pilih menu dibawah</string>
+    <string name="firebase_database_url" translatable="false">https://capstone-complan-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">911917534554</string>
+    <string name="google_api_key" translatable="false">AIzaSyBghz29k9zMz6KOIaQDImzltWQ6DFxLq4o</string>
+    <string name="google_app_id" translatable="false">1:911917534554:android:7dcbf26ca250f3f4003763</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBghz29k9zMz6KOIaQDImzltWQ6DFxLq4o</string>
+    <string name="google_storage_bucket" translatable="false">capstone-complan.appspot.com</string>
+    <string name="ih_category">TV_Kategori</string>
+    <string name="ih_name">TV_Name</string>
+    <string name="ih_time">TV_Tanggal</string>
+    <string name="project_id" translatable="false">capstone-complan</string>
+    <string name="tab_facility">Fasilitas</string>
+    <string name="tab_person">Pelanggaran</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tv_code_school">TV_Code_School</string>
+    <string name="tv_location">TV_Lokasi_Sekolah</string>
+    <string name="tv_major">TV_Major</string>
+    <string name="tv_name">TV_Name</string>
+    <string name="tv_school_name">TV_Nama_Sekolah</string>
+    <string name="txt_category">Jenis Pel</string>
+    <string name="txt_desc">Isi Laporan</string>
+    <string name="txt_email">Alamat Email</string>
+    <string name="txt_form_warning">Mohon jangan berikan laporan palsu!</string>
+    <string name="txt_hint_confirm_password">Confirm Password</string>
+    <string name="txt_hint_desc">Isi deskripsi disini</string>
+    <string name="txt_hint_email">1234@mail.com</string>
+    <string name="txt_hint_location_facility">Gerbang masuk sekolah</string>
+    <string name="txt_hint_major">Jurusan Anda</string>
+    <string name="txt_hint_name">Nama Anda</string>
+    <string name="txt_hint_name_facility">Keran Air</string>
+    <string name="txt_hint_password">Password</string>
+    <string name="txt_hint_school_code">Kode Sekolah</string>
+    <string name="txt_login">Masuk</string>
+    <string name="txt_major">Jurusan</string>
+    <string name="txt_name">Nama</string>
+    <string name="txt_or">atau</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_register">Daftar</string>
+    <string name="txt_school_code">Kode Sekolah</string>
+    <string name="txt_send">Kirim</string>
+    <string name="txt_sign_out">Keluar</string>
+    <style name="Theme.ComPlanSchool" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/blue_dark</item>
+        <item name="colorPrimaryVariant">@color/blue_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>
