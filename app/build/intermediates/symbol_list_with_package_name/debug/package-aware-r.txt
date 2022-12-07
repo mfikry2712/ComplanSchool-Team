@@ -2640,6 +2640,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable building_high_school
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2666,6 +2667,7 @@ drawable custom_buttongoogle
 drawable custom_edittext
 drawable custom_edittext_report
 drawable custom_edittext_warning
+drawable custom_form_input
 drawable custom_iconaccount
 drawable custom_iconjurusan
 drawable custom_iconkode
@@ -2735,6 +2737,7 @@ drawable menu1
 drawable menu_1
 drawable menu_image_1
 drawable menu_imager_1
+drawable menu_laporan_masuk
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3041,6 +3044,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id img_item_photo
 id immediateStop
 id included
 id indeterminate
@@ -3189,6 +3193,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id rv_laporan
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3306,6 +3311,8 @@ id transition_transform
 id triangle
 id tv_Alamat
 id tv_NamaSekolah
+id tv_item_description
+id tv_item_name
 id tv_jenis2
 id tv_namaSuspect
 id tv_tanggal
@@ -3461,6 +3468,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_input_profile
+layout activity_list_laporan
 layout activity_list_laporan_fasilitas
 layout activity_list_laporan_person
 layout activity_login
@@ -3489,6 +3497,7 @@ layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
 layout item_history
+layout laporan_item_row
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

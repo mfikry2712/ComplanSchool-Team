@@ -1,46 +1,58 @@
 [
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/activity_input_profile.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/activity_input_profile.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\laporan_item_row.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\laporan_item_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\fragment_dashboard.xml"
     },
     {
         "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/activity_main.xml",
         "source": "com.example.complanschool.app-main-58:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/activity_list_laporan_fasilitas.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/activity_list_laporan_fasilitas.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_input_profile.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_input_profile.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/fragment_home.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/fragment_home.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/fragment_notifications.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/fragment_notifications.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/item_history.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/item_history.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_list_laporan_person.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_list_laporan_person.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/activity_list_laporan_person.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/activity_list_laporan_person.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/activity_menu.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/activity_menu.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\item_history.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\item_history.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/activity_register.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/activity_register.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_register.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/fragment_dashboard.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/fragment_dashboard.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_list_laporan.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_list_laporan.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/activity_login.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/activity_login.xml"
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_list_laporan_fasilitas.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_list_laporan_fasilitas.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_menu.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_menu.xml"
     }
 ]

@@ -6,9 +6,9 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml
+8-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml
+9-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->[com.firebaseui:firebase-ui-database:8.0.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\663e632578d6f1b1195cb5aa31b87259\transformed\firebase-ui-database-8.0.0\AndroidManifest.xml:9:5-67
@@ -18,130 +18,130 @@
 12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\de611912cac54b225abe6affc83dbadc\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
 13
 14    <application
-14-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:5:5-71:19
+14-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:5:5-71:19
 15        android:allowBackup="true"
-15-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:6:9-35
+15-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:6:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 16-->[androidx.core:core:1.8.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\a84ea4f0cd19dbb745b8f3c734753675\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 17        android:dataExtractionRules="@xml/data_extraction_rules"
-17-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:7:9-65
+17-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:7:9-65
 18        android:debuggable="true"
 19        android:fullBackupContent="@xml/backup_rules"
-19-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:8:9-54
+19-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:8:9-54
 20        android:icon="@mipmap/ic_launcher"
-20-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:9:9-43
+20-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:9:9-43
 21        android:label="@string/app_name"
-21-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:10:9-41
+21-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:10:9-41
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:11:9-54
+22-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:11:9-54
 23        android:supportsRtl="true"
-23-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:12:9-35
+23-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:12:9-35
 24        android:testOnly="true"
 25        android:theme="@style/Theme.ComPlanSchool" >
-25-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:13:9-51
+25-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:13:9-51
 26        <activity
-26-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:15:9-21:20
+26-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:15:9-21:20
 27            android:name="com.example.complanschool.authentication.InputProfileActivity"
-27-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:16:13-64
+27-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:16:13-64
 28            android:exported="false" >
-28-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:17:13-37
+28-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:17:13-37
 29            <meta-data
-29-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
+29-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
 30                android:name="android.app.lib_name"
-30-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
+30-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
 31                android:value="" />
-31-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
+31-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
 32        </activity>
 33        <activity
-33-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:22:9-28:20
+33-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:22:9-28:20
 34            android:name="com.example.complanschool.authentication.RegisterActivity"
-34-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:23:13-60
+34-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:23:13-60
 35            android:exported="false" >
-35-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:24:13-37
+35-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:24:13-37
 36            <meta-data
-36-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
+36-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
 37                android:name="android.app.lib_name"
-37-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
+37-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
 38                android:value="" />
-38-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
+38-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
 39        </activity>
 40        <activity
-40-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:29:9-35:20
+40-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:29:9-35:20
 41            android:name="com.example.complanschool.authentication.LoginActivity"
-41-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:30:13-57
+41-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:30:13-57
 42            android:exported="false" >
-42-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:31:13-37
+42-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:31:13-37
 43            <meta-data
-43-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
+43-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
 44                android:name="android.app.lib_name"
-44-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
+44-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
 45                android:value="" />
-45-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
+45-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
 46        </activity>
 47        <activity
-47-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:36:9-42:20
+47-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:36:9-42:20
 48            android:name="com.example.complanschool.laporan.ListLaporanFasilitas"
-48-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:37:13-57
+48-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:37:13-57
 49            android:exported="false" >
-49-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:38:13-37
+49-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:38:13-37
 50            <meta-data
-50-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
+50-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
 51                android:name="android.app.lib_name"
-51-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
+51-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
 52                android:value="" />
-52-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
+52-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
 53        </activity>
 54        <activity
-54-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:43:9-49:20
+54-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:43:9-49:20
 55            android:name="com.example.complanschool.laporan.ListLaporanPerson"
-55-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:44:13-54
+55-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:44:13-54
 56            android:exported="false" >
-56-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:45:13-37
+56-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:45:13-37
 57            <meta-data
-57-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
+57-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
 58                android:name="android.app.lib_name"
-58-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
+58-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
 59                android:value="" />
-59-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
+59-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
 60        </activity>
 61        <activity
-61-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:50:9-63:20
-62            android:name="com.example.complanschool.Menu"
-62-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:51:13-33
+61-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:50:9-63:20
+62            android:name="com.example.complanschool.MainActivity"
+62-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:51:13-41
 63            android:exported="true"
-63-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:52:13-36
+63-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:52:13-36
 64            android:label="@string/title_activity_menu" >
-64-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:53:13-56
+64-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:53:13-56
 65            <intent-filter>
-65-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:54:13-58:29
+65-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:54:13-58:29
 66                <action android:name="android.intent.action.MAIN" />
-66-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:55:17-69
-66-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:55:25-66
+66-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:55:17-69
+66-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:55:25-66
 67
 68                <category android:name="android.intent.category.LAUNCHER" />
-68-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:57:17-77
-68-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:57:27-74
+68-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:57:17-77
+68-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:57:27-74
 69            </intent-filter>
 70
 71            <meta-data
-71-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
+71-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
 72                android:name="android.app.lib_name"
-72-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
+72-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
 73                android:value="" />
-73-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
+73-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
 74        </activity>
 75        <activity
-75-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:64:9-70:20
-76            android:name="com.example.complanschool.MainActivity"
-76-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:65:13-41
+75-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:64:9-70:20
+76            android:name="com.example.complanschool.Menu"
+76-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:65:13-33
 77            android:exported="true" >
-77-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:66:13-36
+77-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:66:13-36
 78            <meta-data
-78-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
+78-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
 79                android:name="android.app.lib_name"
-79-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
+79-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
 80                android:value="" />
-80-->D:\Complan\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
+80-->D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
 81        </activity>
 82
 83        <service

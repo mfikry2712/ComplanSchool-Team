@@ -21,6 +21,7 @@ drawable bg_home1
 drawable bg_lapor
 drawable bg_lapor1
 drawable bg_login
+drawable building_high_school
 drawable custom_button
 drawable custom_button_active
 drawable custom_button_menu
@@ -28,6 +29,7 @@ drawable custom_buttongoogle
 drawable custom_edittext
 drawable custom_edittext_report
 drawable custom_edittext_warning
+drawable custom_form_input
 drawable custom_iconaccount
 drawable custom_iconjurusan
 drawable custom_iconkode
@@ -63,6 +65,7 @@ drawable menu1
 drawable menu_1
 drawable menu_image_1
 drawable menu_imager_1
+drawable menu_laporan_masuk
 drawable splash_screen
 drawable tab_indicator
 id btnGoogle
@@ -85,6 +88,7 @@ id edtPrincipal
 id edtSchoolName
 id emailText
 id imageView
+id img_item_photo
 id mobile_navigation
 id nav_host_fragment_activity_menu
 id nav_view
@@ -98,6 +102,7 @@ id passwordText4
 id passwordText5
 id rc_RiwayatLaporanFa
 id rc_RiwayatLaporanOk
+id rv_laporan
 id textView
 id textView3
 id textView8
@@ -105,6 +110,8 @@ id text_dashboard
 id text_notifications
 id tv_Alamat
 id tv_NamaSekolah
+id tv_item_description
+id tv_item_name
 id tv_jenis2
 id tv_namaSuspect
 id tv_tanggal
@@ -112,6 +119,7 @@ id welcomeText
 id welcomeText2
 id welcomeText5
 layout activity_input_profile
+layout activity_list_laporan
 layout activity_list_laporan_fasilitas
 layout activity_list_laporan_person
 layout activity_login
@@ -122,6 +130,7 @@ layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
 layout item_history
+layout laporan_item_row
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
