@@ -171,9 +171,9 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(o)
                     finish()
                 }else{
-                    //val o = Intent(this@LoginActivity,  InputProfileActivity::class.java)
-                    //startActivity(o)
-                    //finish()
+                    val o = Intent(this@LoginActivity,  InputProfileActivity::class.java)
+                    startActivity(o)
+                    finish()
                 }
             }
         }

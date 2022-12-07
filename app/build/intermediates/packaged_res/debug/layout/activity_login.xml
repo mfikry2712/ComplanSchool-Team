@@ -116,17 +116,15 @@
 
     <com.example.complanschool.customview.CustomButton
         android:id="@+id/btnSignUp"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="230dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/custom_button"
         android:text="@string/txt_register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/welcomeText5"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText5"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -136,11 +134,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="230dp"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/welcomeText5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText5"
         app:layout_constraintVertical_bias="0.0"
@@ -148,8 +144,9 @@
 
     <TextView
         android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
         android:text="@string/al_title"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -163,8 +160,9 @@
 
     <TextView
         android:id="@+id/welcomeText2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
         android:text="@string/al_subtitle"
         android:textColor="@color/black_50"
         android:textSize="15sp"

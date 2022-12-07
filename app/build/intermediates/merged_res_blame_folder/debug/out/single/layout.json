@@ -8,16 +8,16 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\fragment_dashboard.xml"
     },
     {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/activity_main.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_input_profile.xml",
-        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_input_profile.xml"
+        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/fragment_home.xml",
+        "source": "com.example.complanschool.app-main-58:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\fragment_home.xml",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_input_profile.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_input_profile.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_login.xml",

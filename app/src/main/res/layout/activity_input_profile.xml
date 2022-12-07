@@ -13,8 +13,9 @@
 
             <TextView
                 android:id="@+id/passwordText"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="15dp"
                 android:text="Jabatan"
                 android:textColor="@color/black"
@@ -47,8 +48,9 @@
 
             <TextView
                 android:id="@+id/passwordText3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="15dp"
                 android:text="Nama Kepala Sekolah"
                 android:textColor="@color/black"
@@ -61,23 +63,25 @@
 
             <TextView
                 android:id="@+id/welcomeText"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:text="Lengkapi profil sekolah"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.201"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.099" />
+                app:layout_constraintVertical_bias="0.057" />
 
             <TextView
                 android:id="@+id/passwordText4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="15dp"
                 android:text="Domisi Sekolah"
                 android:textColor="@color/black"
@@ -90,8 +94,9 @@
 
             <TextView
                 android:id="@+id/passwordText5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="20dp"
                 android:text="Kode Sekolah"
                 android:textColor="@color/black"
@@ -104,8 +109,9 @@
 
             <TextView
                 android:id="@+id/emailText"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/txt_name"
                 android:textColor="@color/black"
@@ -118,8 +124,9 @@
 
             <TextView
                 android:id="@+id/welcomeText2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:text="@string/aip_subtitle"
                 android:textColor="@color/black_50"
                 android:textSize="15sp"
@@ -161,13 +168,14 @@
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="28dp"
+                android:layout_marginBottom="100dp"
                 android:text="@string/txt_send"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edtCode"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <EditText
                 android:id="@+id/edtDomicile"
@@ -214,8 +222,9 @@
 
             <TextView
                 android:id="@+id/passwordText2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="15dp"
                 android:text="Nama Sekolah"
                 android:textColor="@color/black"
@@ -267,5 +276,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/passwordText3"
                 tools:ignore="DuplicateSpeakableTextCheck" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

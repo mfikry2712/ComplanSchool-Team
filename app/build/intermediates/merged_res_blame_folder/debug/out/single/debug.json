@@ -216,6 +216,10 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\custom_buttongoogle.xml"
     },
     {
+        "merged": "com.example.complanschool.app-merged_res-56:/layout_fragment_home.xml.flat",
+        "source": "com.example.complanschool.app-main-58:/layout/fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_ic_back.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\ic_back.xml"
     },
@@ -276,10 +280,6 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_menu.xml"
     },
     {
-        "merged": "com.example.complanschool.app-merged_res-56:/layout_activity_main.xml.flat",
-        "source": "com.example.complanschool.app-main-58:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\layout_activity_list_laporan.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_list_laporan.xml"
     },
@@ -300,12 +300,12 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_list_laporan_person.xml"
     },
     {
-        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_bg_lapor.png.flat",
-        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\bg_lapor.png"
-    },
-    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_bg_lapor.png.flat",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\bg_lapor.png"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable-ldpi_ic_launcher_foreground.png.flat",
