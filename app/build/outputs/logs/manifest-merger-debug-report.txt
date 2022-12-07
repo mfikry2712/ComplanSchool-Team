@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\2eca0c8a6da0ae4f162d8370ce8c9b5d\transformed\viewbinding-7.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.firebaseui:firebase-ui-database:8.0.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\663e632578d6f1b1195cb5aa31b87259\transformed\firebase-ui-database-8.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\6a9314cce30a287036be5f20ffe2c5c9\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:2:1-17:12
@@ -92,27 +92,27 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Muhammad Fikry\.
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\beb66da50d58793ec4b90b4ccfbcc26d\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\9e07a0bef8dc469ce19da45663f6ded9\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\96e1ec01ea4592a82c4fe1c0e3b49f56\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
 	package
 		INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
 		INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
 		INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-74:12
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:1-87:12
 		INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:5:5-72:19
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:5:5-85:19
 MERGED from [com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\6a9314cce30a287036be5f20ffe2c5c9\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\6a9314cce30a287036be5f20ffe2c5c9\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\Muhammad Fikry\.gradle\caches\transforms-3\df97ee5b1d2fc80053b10a4b9fad2ba7\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
@@ -181,66 +181,78 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Muhammad Fikry\.gr
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:13:9-51
 	android:dataExtractionRules
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.complanschool.authentication.InputProfileActivity
+activity#com.example.complanschool.authentication.InputSchoolProfileActivity
 ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:exported
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:16:13-64
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:16:13-70
 meta-data#android.app.lib_name
 ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:18:13-20:36
 	android:value
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:20:17-33
 	android:name
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:19:17-52
-activity#com.example.complanschool.authentication.RegisterActivity
+activity#com.example.complanschool.authentication.SelectCode
 ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:22:9-28:20
 	android:exported
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:23:13-60
-activity#com.example.complanschool.authentication.LoginActivity
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:23:13-54
+activity#com.example.complanschool.authentication.InputUserProfileActivity
 ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:exported
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:30:13-57
-activity#com.example.complanschool.laporan.ListLaporanFasilitas
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:30:13-68
+activity#com.example.complanschool.authentication.RegisterActivity
 ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:36:9-42:20
 	android:exported
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:37:13-57
-activity#com.example.complanschool.laporan.ListLaporanPerson
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:37:13-60
+activity#com.example.complanschool.authentication.LoginActivity
 ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:43:9-49:20
 	android:exported
 		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:45:13-37
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:44:13-54
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:44:13-57
+activity#com.example.complanschool.laporan.ListLaporanFasilitas
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:50:9-56:20
+	android:exported
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:52:13-37
+	android:name
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:51:13-57
+activity#com.example.complanschool.laporan.ListLaporanPerson
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:57:9-63:20
+	android:exported
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:59:13-37
+	android:name
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:58:13-54
 activity#com.example.complanschool.Menu
-ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:50:9-59:20
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:64:9-71:20
 	android:label
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:53:13-56
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:67:13-56
 	android:exported
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:52:13-36
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:66:13-36
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:51:13-33
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:65:13-33
 activity#com.example.complanschool.MainActivity
-ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:60:9-71:20
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:72:9-84:20
 	android:exported
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:62:13-36
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:74:13-36
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:61:13-41
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:73:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:63:13-67:29
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:75:13-79:29
 action#android.intent.action.MAIN
-ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:64:17-69
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:76:17-69
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:64:25-66
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:76:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:66:17-77
+ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:78:17-77
 	android:name
-		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:66:27-74
+		ADDED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml:78:27-74
 uses-sdk
 INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\ComplanError\ComPlanSchool\app\src\main\AndroidManifest.xml

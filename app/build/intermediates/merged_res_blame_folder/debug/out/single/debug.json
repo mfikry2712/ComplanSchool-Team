@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.complanschool.app-merged_res-56:/layout_activity_input_user_profile.xml.flat",
+        "source": "com.example.complanschool.app-main-58:/layout/activity_input_user_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_custom_iconlock.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\custom_iconlock.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_ic_lock_onclick.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\ic_lock_onclick.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\layout_activity_select_code.xml.flat",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_select_code.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_menu1.png.flat",
@@ -216,10 +224,6 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\custom_buttongoogle.xml"
     },
     {
-        "merged": "com.example.complanschool.app-merged_res-56:/layout_fragment_home.xml.flat",
-        "source": "com.example.complanschool.app-main-58:/layout/fragment_home.xml"
-    },
-    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_ic_back.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\ic_back.xml"
     },
@@ -312,6 +316,10 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-pngs-51:\\drawable-ldpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "com.example.complanschool.app-merged_res-56:/layout_activity_select_code.xml.flat",
+        "source": "com.example.complanschool.app-main-58:/layout/activity_select_code.xml"
+    },
+    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_ic_riwayat.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\ic_riwayat.xml"
     },
@@ -330,6 +338,10 @@
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.complanschool.app-merged_res-56:/layout_activity_input_school_profile.xml.flat",
+        "source": "com.example.complanschool.app-main-58:/layout/activity_input_school_profile.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\menu_bottom_nav_menu.xml.flat",

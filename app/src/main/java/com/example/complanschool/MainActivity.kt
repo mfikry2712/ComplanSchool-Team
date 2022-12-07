@@ -6,8 +6,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import com.example.complanschool.authentication.InputProfileActivity
+import com.example.complanschool.authentication.InputUserProfileActivity
 import com.example.complanschool.authentication.LoginActivity
+import com.example.complanschool.authentication.SelectCode
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                         val o = Intent(this@MainActivity,  Menu::class.java)
                         startActivity(o)
                     }else{
-                        val o = Intent(this@MainActivity,  InputProfileActivity::class.java)
+                        val o = Intent(this@MainActivity,  SelectCode::class.java)
                         startActivity(o)
                     }
                 }.addOnFailureListener{

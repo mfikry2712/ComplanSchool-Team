@@ -2900,8 +2900,10 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnConfirmCode
 id btnGoogle
 id btnLogin
+id btnNoCode
 id btnSend
 id btnSendSignUp
 id btnSignUp
@@ -2983,7 +2985,7 @@ id easeInOut
 id easeOut
 id east
 id edit_query
-id edtCode
+id edtCodeConfirm
 id edtConfirmPassword
 id edtDomicile
 id edtMail
@@ -3168,7 +3170,6 @@ id passwordText
 id passwordText2
 id passwordText3
 id passwordText4
-id passwordText5
 id password_toggle
 id path
 id pathRelative
@@ -3281,6 +3282,8 @@ id textStart
 id textTop
 id textView
 id textView3
+id textView4
+id textView5
 id textView8
 id text_dashboard
 id text_input_end_icon
@@ -3467,7 +3470,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_input_profile
+layout activity_input_school_profile
+layout activity_input_user_profile
 layout activity_list_laporan
 layout activity_list_laporan_fasilitas
 layout activity_list_laporan_person
@@ -3475,6 +3479,7 @@ layout activity_login
 layout activity_main
 layout activity_menu
 layout activity_register
+layout activity_select_code
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog

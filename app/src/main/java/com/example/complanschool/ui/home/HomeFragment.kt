@@ -5,10 +5,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.complanschool.authentication.InputProfileActivity
 import com.example.complanschool.databinding.FragmentHomeBinding
 import com.example.complanschool.laporan.ListLaporanFasilitas
 import com.example.complanschool.laporan.ListLaporanPerson

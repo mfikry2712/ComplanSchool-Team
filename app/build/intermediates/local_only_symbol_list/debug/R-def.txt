@@ -68,8 +68,10 @@ drawable menu_imager_1
 drawable menu_laporan_masuk
 drawable splash_screen
 drawable tab_indicator
+id btnConfirmCode
 id btnGoogle
 id btnLogin
+id btnNoCode
 id btnSend
 id btnSendSignUp
 id btnSignUp
@@ -77,7 +79,7 @@ id btnToLaporanFacility
 id btnToLaporanPerson
 id card_view
 id container
-id edtCode
+id edtCodeConfirm
 id edtConfirmPassword
 id edtDomicile
 id edtMail
@@ -99,12 +101,13 @@ id passwordText
 id passwordText2
 id passwordText3
 id passwordText4
-id passwordText5
 id rc_RiwayatLaporanFa
 id rc_RiwayatLaporanOk
 id rv_laporan
 id textView
 id textView3
+id textView4
+id textView5
 id textView8
 id text_dashboard
 id text_notifications
@@ -118,7 +121,8 @@ id tv_tanggal
 id welcomeText
 id welcomeText2
 id welcomeText5
-layout activity_input_profile
+layout activity_input_school_profile
+layout activity_input_user_profile
 layout activity_list_laporan
 layout activity_list_laporan_fasilitas
 layout activity_list_laporan_person
@@ -126,6 +130,7 @@ layout activity_login
 layout activity_main
 layout activity_menu
 layout activity_register
+layout activity_select_code
 layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
