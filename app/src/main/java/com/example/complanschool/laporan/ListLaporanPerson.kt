@@ -48,11 +48,11 @@ class ListLaporanPerson : AppCompatActivity() {
         dbi = FirebaseDatabase.getInstance().getReference("user").child("dbiOuNbpL4ZTAL780JyQtiQ0TMU2")
 
         dbi.get().addOnSuccessListener{
-            kd =  it.child("kodeSekolah").value.toString()
+            kd =  it.child("schoolCode").value.toString()
             Log.d("test value of kd", kd)
             msgRef.value = db.reference.child("kode_sekolah")
-                .child("A07").child("Laporan")
-                .child("dbiOuNbpL4ZTAL780JyQtiQ0TMU2")
+                .child("T7B5Z").child("Laporan")
+                .child("0wmZKYkP1fX20Njpjn9OpfmGGmS2")
                 .child("Laporan Orang")
         }
         msgRef.observe(this){

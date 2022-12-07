@@ -56,18 +56,6 @@ class InputProfileActivity : AppCompatActivity() {
 
         dbi = Firebase.database
 
-//        binding.btnSend.setOnClickListener{
-//            Log.d("asd","jalan")
-//                val source = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-//                val schoold = java.util.Random().ints(5, 0, source.length)
-//                    .asSequence()
-//                    .map(source::get)
-//                    .joinToString("")
-//
-//                    Log.d("Kode Acak", schoold)
-//            Log.d("asd","bawah")
-//        }
-
         binding.btnSend.setOnClickListener{
             val schoolKd = if (schoolCode.text.isEmpty()){
                 val source = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -89,10 +77,7 @@ class InputProfileActivity : AppCompatActivity() {
             val dataRegistered = UserProfile(
                 userName.text.toString(),
                 userPosition.text.toString(),
-                schoolName.text.toString(),
-                principal.text.toString(),
-                schoolDomicile.text.toString(),
-                schoolKd
+                schoolCode = schoolKd
             )
 
             dbi.reference.child(CHILD_USER)

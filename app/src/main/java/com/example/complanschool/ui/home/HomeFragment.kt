@@ -39,7 +39,7 @@ private var _binding: FragmentHomeBinding? = null
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnToLaporanPerson.setOnClickListener{
-            startActivity(Intent(requireActivity(), InputProfileActivity::class.java))
+            startActivity(Intent(requireActivity(), ListLaporanPerson::class.java))
         }
 
         binding.btnToLaporanFacility.setOnClickListener{
