@@ -28,6 +28,10 @@
         </activity>
         <activity
             android:name=".authentication.InputUserProfileActivity"
+            android:name=".ui.detail.DetailLaporanFasilitas"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.InputProfileActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
