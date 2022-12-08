@@ -28,19 +28,11 @@ class CustomButton : AppCompatButton {
     }
 
     override fun onDraw(canvas: Canvas) {
-        var textButton = "Masuk"
-        if(text.equals("Daftar")){
-            textButton = "Daftar"
-        }else if(text.equals("Kirim")) {
-            textButton = "Kirim"
-        }
         super.onDraw(canvas)
         background = if(isEnabled) enabledBackground else disabledBackground
         setTextColor(txtColor)
         textSize = 12f
         gravity = Gravity.CENTER
-
-        text = if(isEnabled) textButton else "Masukan Data Anda"
     }
     private fun init() {
         txtColor = ContextCompat.getColor(context, android.R.color.background_light)

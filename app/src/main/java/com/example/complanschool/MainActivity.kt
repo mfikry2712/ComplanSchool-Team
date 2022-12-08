@@ -3,36 +3,53 @@ package com.example.complanschool
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.util.Log
+import com.example.complanschool.authentication.InputUserProfileActivity
 import com.example.complanschool.authentication.LoginActivity
-import com.example.complanschool.databinding.ActivityMainBinding
+import com.example.complanschool.authentication.SelectCode
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
     private lateinit var auth: FirebaseAuth
+    private lateinit var authReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
         auth = Firebase.auth
+
         val firebaseUser = auth.currentUser
         if (firebaseUser == null) {
-            // Not signed in, launch the Login activity
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-            return
-        }
+            startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+        }else{
 
-        binding.btnToListLaporan.setOnClickListener {
-            //Toast.makeText(this, auth.uid, Toast.LENGTH_LONG).show()
-//            val goToListLaporan = Intent(this@MainActivity, ListLaporanActivity::class.java)
-//            startActivity(goToListLaporan)
-        }
+            authReference = FirebaseDatabase.getInstance().getReference("user_sekolah")
 
+            Handler(Looper.getMainLooper()).postDelayed({
+                authReference.child(firebaseUser.uid).get().addOnSuccessListener{
+                    if (it.exists()){
+                        val o = Intent(this@MainActivity,  Menu::class.java)
+                        startActivity(o)
+                    }else{
+                        val o = Intent(this@MainActivity,  SelectCode::class.java)
+                        startActivity(o)
+                    }
+                }.addOnFailureListener{
+                    Log.d("Error Failure",it.message.toString())
+                }
+                finish()
+            }, delayMillis)
+
+        }}
+
+    companion object{
+        const val delayMillis : Long = 2000
     }
 }

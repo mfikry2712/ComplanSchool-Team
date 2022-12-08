@@ -24,7 +24,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.ComPlanSchool" >
         <activity
-            android:name="com.example.complanschool.authentication.InputProfileActivity"
+            android:name="com.example.complanschool.authentication.InputSchoolProfileActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.complanschool.authentication.SelectCode"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.complanschool.authentication.InputUserProfileActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -62,12 +76,6 @@
             android:name="com.example.complanschool.Menu"
             android:exported="true"
             android:label="@string/title_activity_menu" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -75,6 +83,12 @@
         <activity
             android:name="com.example.complanschool.MainActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

@@ -1,5 +1,6 @@
 package com.example.complanschool.laporan
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.complan.dataclass.DataLaporanFasilitas
 import com.example.complan.dataclass.DataLaporanPerson
+import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityListLaporanFasilitasBinding
 import com.example.complanschool.databinding.ActivityListLaporanPersonBinding
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -34,33 +36,24 @@ class ListLaporanFasilitas : AppCompatActivity() {
         binding = ActivityListLaporanFasilitasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        binding.toolbar.setNavigationOnClickListener {
-            onBackPressed()
-        }
-
         val msgRef = MutableLiveData<DatabaseReference>()
         auth = Firebase.auth
         db = Firebase.database
         val firebaseUser = auth.currentUser
         if (firebaseUser == null) {
             // Not signed in, launch the Login activity
-            //startActivity(Intent(this@ListLaporanPerson, LoginActivity::class.java))
-            //requireActivity().finish()
-        }else
-        {
-            Log.d(null, "ada"+firebaseUser.uid)
-
+            startActivity(Intent(this@ListLaporanFasilitas, LoginActivity::class.java))
+            finish()
+            return
         }
-        dbi = FirebaseDatabase.getInstance().getReference("user").child("4TF6SrgsGpdtL8Bb3rbnsAN6xgh1")
+
+        dbi = FirebaseDatabase.getInstance().getReference("user_sekolah").child(firebaseUser.uid)
 
         dbi.get().addOnSuccessListener{
-            kd =  it.child("kode_sekolah").value.toString()
+            kd =  it.child("schoolCode").value.toString()
             Log.d("test value of kd", kd)
             msgRef.value = db.reference.child("kode_sekolah")
-                .child("T123").child("Laporan")
-                .child("4TF6SrgsGpdtL8Bb3rbnsAN6xgh1")
+                .child(kd).child("Laporan")
                 .child("Laporan Fasilitas")
         }
         msgRef.observe(this){
