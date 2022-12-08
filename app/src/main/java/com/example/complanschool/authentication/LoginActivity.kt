@@ -160,6 +160,8 @@ class LoginActivity : AppCompatActivity() {
                 Log.w(TAG, "signInWithCredential:failure", it.exception)
                 updateUI(null)
             }
+        }.addOnFailureListener {
+            Log.d("Error", it.message.toString())
         }
     }
 

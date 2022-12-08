@@ -34,6 +34,12 @@ class ListLaporanFasilitas : AppCompatActivity() {
         binding = ActivityListLaporanFasilitasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
+
         val msgRef = MutableLiveData<DatabaseReference>()
         auth = Firebase.auth
         db = Firebase.database
@@ -47,14 +53,14 @@ class ListLaporanFasilitas : AppCompatActivity() {
             Log.d(null, "ada"+firebaseUser.uid)
 
         }
-        dbi = FirebaseDatabase.getInstance().getReference("user").child("dbiOuNbpL4ZTAL780JyQtiQ0TMU2")
+        dbi = FirebaseDatabase.getInstance().getReference("user").child("4TF6SrgsGpdtL8Bb3rbnsAN6xgh1")
 
         dbi.get().addOnSuccessListener{
-            kd =  it.child("kodeSekolah").value.toString()
+            kd =  it.child("kode_sekolah").value.toString()
             Log.d("test value of kd", kd)
             msgRef.value = db.reference.child("kode_sekolah")
-                .child("A07").child("Laporan")
-                .child("dbiOuNbpL4ZTAL780JyQtiQ0TMU2")
+                .child("T123").child("Laporan")
+                .child("4TF6SrgsGpdtL8Bb3rbnsAN6xgh1")
                 .child("Laporan Fasilitas")
         }
         msgRef.observe(this){

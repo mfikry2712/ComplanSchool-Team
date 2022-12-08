@@ -3,7 +3,7 @@ package com.example.complanschool
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.complanschool.auth.LoginActivity
+import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnToListLaporan.setOnClickListener {
             //Toast.makeText(this, auth.uid, Toast.LENGTH_LONG).show()
-            val goToListLaporan = Intent(this@MainActivity, ListLaporanActivity::class.java)
-            startActivity(goToListLaporan)
+//            val goToListLaporan = Intent(this@MainActivity, ListLaporanActivity::class.java)
+//            startActivity(goToListLaporan)
         }
 
     }

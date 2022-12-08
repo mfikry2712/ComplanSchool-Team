@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ComPlanSchool</string>
-<<<<<<< HEAD
-=======
+    <!--<<<<<<< HEAD-->
+    =======
     <string name="title_activity_menu">Menu</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -88,5 +88,7 @@
 
     //Untuk Custom View
     <string name="cv_btn_google">Dengan Google</string>
->>>>>>> b0d136a (Menambahkan banyak fitur dari mulai membuat activity login, activity register, activity home dengan bottom navigation, activity input profile, activity list laporan person, activity list laporan fasilitas dan semuanya telah tersambung dengan firebase)
+    >>>>>>> b0d136a (Menambahkan banyak fitur dari mulai membuat activity login, activity register,
+    activity home dengan bottom navigation, activity input profile, activity list laporan person,
+    activity list laporan fasilitas dan semuanya telah tersambung dengan firebase)
 </resources>
