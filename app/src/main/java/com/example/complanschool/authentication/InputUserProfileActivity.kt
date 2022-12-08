@@ -52,7 +52,8 @@ class InputUserProfileActivity : AppCompatActivity() {
         binding.btnSend.setOnClickListener{
             val dataRegistered = UserProfile(
                 userName.text.toString(),
-                userPosition.text.toString()
+                userPosition.text.toString(),
+                schoolCode = schoolKd
             )
 
             dbi.reference.child(CHILD_USER)

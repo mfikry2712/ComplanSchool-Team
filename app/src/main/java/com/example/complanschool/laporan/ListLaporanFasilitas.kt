@@ -1,5 +1,6 @@
 package com.example.complanschool.laporan
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.complan.dataclass.DataLaporanFasilitas
 import com.example.complan.dataclass.DataLaporanPerson
+import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityListLaporanFasilitasBinding
 import com.example.complanschool.databinding.ActivityListLaporanPersonBinding
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -40,21 +42,18 @@ class ListLaporanFasilitas : AppCompatActivity() {
         val firebaseUser = auth.currentUser
         if (firebaseUser == null) {
             // Not signed in, launch the Login activity
-            //startActivity(Intent(this@ListLaporanPerson, LoginActivity::class.java))
-            //requireActivity().finish()
-        }else
-        {
-            Log.d(null, "ada"+firebaseUser.uid)
-
+            startActivity(Intent(this@ListLaporanFasilitas, LoginActivity::class.java))
+            finish()
+            return
         }
-        dbi = FirebaseDatabase.getInstance().getReference("user").child("dbiOuNbpL4ZTAL780JyQtiQ0TMU2")
+
+        dbi = FirebaseDatabase.getInstance().getReference("user_sekolah").child(firebaseUser.uid)
 
         dbi.get().addOnSuccessListener{
             kd =  it.child("schoolCode").value.toString()
             Log.d("test value of kd", kd)
             msgRef.value = db.reference.child("kode_sekolah")
-                .child("T7B5Z").child("Laporan")
-                .child("0wmZKYkP1fX20Njpjn9OpfmGGmS2")
+                .child(kd).child("Laporan")
                 .child("Laporan Fasilitas")
         }
         msgRef.observe(this){

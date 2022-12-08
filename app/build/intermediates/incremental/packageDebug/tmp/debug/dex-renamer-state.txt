@@ -1,4 +1,4 @@
-#Thu Dec 08 00:40:26 ICT 2022
+#Thu Dec 08 19:51:44 ICT 2022
 path.4=1/classes.dex
 path.3=14/classes.dex
 path.2=10/classes.dex
@@ -9,6 +9,7 @@ path.8=8/classes.dex
 path.7=6/classes.dex
 path.6=3/classes.dex
 path.5=2/classes.dex
+renamed.10=classes11.dex
 path.0=classes.dex
 base.4=D\:\\ComplanError\\ComPlanSchool\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 base.3=D\:\\ComplanError\\ComPlanSchool\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
@@ -18,6 +19,7 @@ base.0=D\:\\ComplanError\\ComPlanSchool\\app\\build\\intermediates\\dex\\debug\\
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
+path.10=15/classes.dex
 renamed.0=classes.dex
 base.9=D\:\\ComplanError\\ComPlanSchool\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.9=classes2.dex
@@ -29,3 +31,4 @@ renamed.5=classes6.dex
 base.6=D\:\\ComplanError\\ComPlanSchool\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
 renamed.4=classes5.dex
 base.5=D\:\\ComplanError\\ComPlanSchool\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.10=D\:\\ComplanError\\ComPlanSchool\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex

@@ -1,17 +1,18 @@
 package com.example.complanschool.laporan
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.complan.dataclass.DataLaporanPerson
+import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityListLaporanPersonBinding
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -22,6 +23,7 @@ class ListLaporanPerson : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var db: FirebaseDatabase
     private lateinit var dbi: DatabaseReference
+    private lateinit var dbo: DatabaseReference
     private lateinit var kd : String
 
     private val adapterObs = MutableLiveData<ListLaporanPersonAdapter>()
@@ -38,22 +40,24 @@ class ListLaporanPerson : AppCompatActivity() {
         val firebaseUser = auth.currentUser
         if (firebaseUser == null) {
             // Not signed in, launch the Login activity
-            //startActivity(Intent(this@ListLaporanPerson, LoginActivity::class.java))
-            //requireActivity().finish()
-        }else
-        {
-            Log.d(null, "ada"+firebaseUser.uid)
-
+            startActivity(Intent(this@ListLaporanPerson, LoginActivity::class.java))
+            finish()
+            return
         }
-        dbi = FirebaseDatabase.getInstance().getReference("user").child("dbiOuNbpL4ZTAL780JyQtiQ0TMU2")
+
+        dbi = FirebaseDatabase.getInstance().getReference("user_sekolah").child(firebaseUser.uid)
+
+
 
         dbi.get().addOnSuccessListener{
             kd =  it.child("schoolCode").value.toString()
             Log.d("test value of kd", kd)
+
             msgRef.value = db.reference.child("kode_sekolah")
-                .child("T7B5Z").child("Laporan")
-                .child("0wmZKYkP1fX20Njpjn9OpfmGGmS2")
+                .child(kd) .child("Laporan")
                 .child("Laporan Orang")
+        }.addOnFailureListener{
+            Log.d("kesalahan", it.message.toString())
         }
         msgRef.observe(this){
 
