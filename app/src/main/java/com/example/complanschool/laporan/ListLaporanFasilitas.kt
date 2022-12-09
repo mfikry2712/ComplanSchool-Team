@@ -6,11 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.complan.dataclass.DataLaporanFasilitas
-import com.example.complan.dataclass.DataLaporanPerson
+import com.example.complanschool.dataclass.DataLaporanFasilitas
 import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityListLaporanFasilitasBinding
-import com.example.complanschool.databinding.ActivityListLaporanPersonBinding
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

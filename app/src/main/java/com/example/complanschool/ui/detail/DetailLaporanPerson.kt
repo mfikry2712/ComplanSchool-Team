@@ -6,10 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.bumptech.glide.Glide
-import com.example.complan.dataclass.DataLaporanPerson
 import com.example.complanschool.authentication.LoginActivity
-import com.example.complanschool.databinding.ActivityDetailLaporanFasilitasBinding
 import com.example.complanschool.databinding.ActivityDetailLaporanPersonBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -17,7 +14,6 @@ import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import java.io.File
-import java.util.*
 
 class DetailLaporanPerson : AppCompatActivity() {
 
@@ -25,8 +21,6 @@ class DetailLaporanPerson : AppCompatActivity() {
     private lateinit var db: DatabaseReference
     private lateinit var dbi: DatabaseReference
     private lateinit var auth: FirebaseAuth
-
-    //private lateinit var photoName : String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,7 +53,7 @@ class DetailLaporanPerson : AppCompatActivity() {
             onBackPressed()
         }
         binding.category.text = intent.getStringExtra("kategori")
-        binding.personName.text = intent.getStringExtra("nama_person");
+        binding.personName.text = intent.getStringExtra("nama_person")
         binding.laporanDecription.text = intent.getStringExtra("dekripsi")
         binding.laporanTimestamp.text = intent.getStringExtra("timestamp")
 
@@ -81,7 +75,7 @@ class DetailLaporanPerson : AppCompatActivity() {
         }
 
     }
-    fun updateLaporan(status : String, photo :String){
+    private fun updateLaporan(status : String, photo :String){
 
         dbi.get().addOnSuccessListener { snapshot ->
             val kdSekolah = snapshot.child("schoolCode").value
@@ -90,7 +84,7 @@ class DetailLaporanPerson : AppCompatActivity() {
                     override fun onDataChange(snapshot: DataSnapshot) {
                         snapshot.children.forEach{
                             val key : String = it.key.toString()
-                            Log.d("Tagnya",key)
+                            Log.d("Tag",key)
                             val gas = mapOf(
                                 "status" to true,
                                 "statusType" to status
@@ -99,7 +93,7 @@ class DetailLaporanPerson : AppCompatActivity() {
                                 .addOnSuccessListener {
                                     Toast.makeText(this@DetailLaporanPerson,"Berhasil",Toast.LENGTH_SHORT).show()
                                 }.addOnFailureListener{
-                                    Toast.makeText(this@DetailLaporanPerson,"Terjadi Error",Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(this@DetailLaporanPerson,"Error",Toast.LENGTH_SHORT).show()
                                 }
                         }
                     }

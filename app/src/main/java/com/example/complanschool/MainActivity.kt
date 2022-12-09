@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import com.example.complanschool.authentication.InputUserProfileActivity
 import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.authentication.SelectCode
 import com.google.firebase.auth.FirebaseAuth

@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.complan.dataclass.DataLaporanPerson
+import com.example.complanschool.dataclass.DataLaporanPerson
 import com.example.complanschool.R
 import com.example.complanschool.databinding.ItemHistoryBinding
 import com.example.complanschool.ui.detail.DetailLaporanPerson
@@ -42,7 +42,7 @@ class ListLaporanPersonAdapter(
         fun bind(item: DataLaporanPerson) {
             if (item.photo != null) {
                 val photoStorage =
-                    FirebaseStorage.getInstance().reference.child("images/${item.photo.toString()}")
+                    FirebaseStorage.getInstance().reference.child("images/${item.photo}")
                 val localFile = File.createTempFile("tempImage", "jpg")
                 photoStorage.getFile(localFile).addOnSuccessListener {
                     val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)

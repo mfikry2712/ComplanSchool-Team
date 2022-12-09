@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.complan.dataclass.DataLaporanFasilitas
+import com.example.complanschool.dataclass.DataLaporanFasilitas
 import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.FragmentStatusFasilitasBinding
 import com.firebase.ui.database.FirebaseRecyclerOptions

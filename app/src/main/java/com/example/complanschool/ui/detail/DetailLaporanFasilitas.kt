@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.bumptech.glide.Glide
 import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityDetailLaporanFasilitasBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -72,7 +71,7 @@ class DetailLaporanFasilitas : AppCompatActivity() {
         }
 
     }
-    fun updateLaporan(status : String, photo : String){
+    private fun updateLaporan(status : String, photo : String){
 
         dbi.get().addOnSuccessListener { snapshot ->
             val kdSekolah = snapshot.child("schoolCode").value
@@ -81,7 +80,7 @@ class DetailLaporanFasilitas : AppCompatActivity() {
                     override fun onDataChange(snapshot: DataSnapshot) {
                         snapshot.children.forEach{
                             val key : String = it.key.toString()
-                            Log.d("Tagnya",key)
+                            Log.d("Tag",key)
                             val gas = mapOf(
                                 "status" to true,
                                 "statusType" to status
@@ -90,12 +89,11 @@ class DetailLaporanFasilitas : AppCompatActivity() {
                                 .addOnSuccessListener {
                                     Toast.makeText(this@DetailLaporanFasilitas,"Berhasil",Toast.LENGTH_SHORT).show()
                                 }.addOnFailureListener{
-                                    Toast.makeText(this@DetailLaporanFasilitas,"Terjadi Error",Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(this@DetailLaporanFasilitas,"Error",Toast.LENGTH_SHORT).show()
                                 }
                         }
                     }
                     override fun onCancelled(error: DatabaseError) {
-                        TODO("Not yet implemented")
                     }
                 })
         }

@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.complan.dataclass.DataLaporanPerson
+import com.example.complanschool.dataclass.DataLaporanPerson
 import com.example.complanschool.R
 import com.example.complanschool.databinding.ItemHistoryStatusBinding
 import com.firebase.ui.database.FirebaseRecyclerAdapter

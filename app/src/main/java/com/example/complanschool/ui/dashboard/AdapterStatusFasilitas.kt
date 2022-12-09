@@ -1,6 +1,5 @@
 package com.example.complanschool.ui.dashboard
 
-import android.app.Application
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.text.format.DateUtils
@@ -8,11 +7,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.complan.dataclass.DataLaporanFasilitas
+import com.example.complanschool.dataclass.DataLaporanFasilitas
 import com.example.complanschool.R
-import com.example.complanschool.databinding.ItemHistoryBinding
 import com.example.complanschool.databinding.ItemHistoryStatusBinding
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions

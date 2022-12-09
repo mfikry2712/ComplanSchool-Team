@@ -1,4 +1,4 @@
-package com.example.complan.dataclass
+package com.example.complanschool.dataclass
 
 import com.google.firebase.database.IgnoreExtraProperties
 
