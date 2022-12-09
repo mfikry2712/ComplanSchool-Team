@@ -22,7 +22,7 @@
         app:title="Detail Laporan Fasilitas"
         app:titleTextColor="@color/black" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         android:id="@+id/facilityImage"
         android:layout_width="match_parent"
         android:layout_height="300dp"

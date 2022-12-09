@@ -278,6 +278,11 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
+attr civ_fill_color
 attr clearTop
 attr clearsTag
 attr clickAction
@@ -3534,9 +3539,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_dashboard
 layout fragment_home
-layout fragment_notifications
+layout fragment_profile
+layout fragment_status
 layout fragment_status_fasilitas
 layout fragment_status_person
 layout item_history
@@ -3663,6 +3668,12 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string btn_buatsekolahbaru_selectcode
+string btn_confirm_selectcode
+string btn_read_detail
+string btn_read_detailperson
+string btn_unrelevant_detail
+string btn_unrelevant_detailperson
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3707,6 +3718,11 @@ string fh_subtitle
 string fh_title
 string fho_subtitle
 string fho_title
+string field_domisili_schoolprofile
+string field_jabatan_schoolprofile
+string field_jabatan_userprofile
+string field_kepsek_schoolprofile
+string field_namasekolah_schoolprofile
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -3821,16 +3837,35 @@ string tab_facility
 string tab_person
 string title_activity_menu
 string title_dashboard
+string title_domisi_schoolprofile
+string title_domisili_notification
 string title_home
+string title_jabatan_notification
+string title_jabatan_schoolprofile
+string title_jabatan_userprofile
+string title_kepsek_notification
+string title_kepsek_schoolprofile
+string title_kodesekolah_notification
+string title_namasekolah_notification
+string title_namasekolah_schoolprofile
 string title_notifications
+string title_schoolprofile
+string title_selectcode
+string title_userprofile
 string tv_code_school
 string tv_location
 string tv_major
 string tv_name
 string tv_school_name
+string txt_atau_selectcode
 string txt_category
+string txt_category_detailperson
 string txt_desc
+string txt_description_detail
+string txt_description_detailperson
 string txt_email
+string txt_facilitylocation_detail
+string txt_facilityname_detail
 string txt_form_warning
 string txt_hint_confirm_password
 string txt_hint_desc
@@ -3846,10 +3881,13 @@ string txt_major
 string txt_name
 string txt_or
 string txt_password
+string txt_personname_detailperson
 string txt_register
 string txt_school_code
 string txt_send
 string txt_sign_out
+string txt_timestamp_detail
+string txt_timestamp_detailperson
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -4940,6 +4978,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color civ_fill_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

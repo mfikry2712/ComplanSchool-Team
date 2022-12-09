@@ -28,6 +28,12 @@
     <string name="app_name">ComPlanSchool</string>
     <string name="ar_subtitle">Harap ingat alamat email dan password anda</string>
     <string name="ar_title">Daftar Pengguna baru</string>
+    <string name="btn_buatsekolahbaru_selectcode">Buat Sekolah Baru</string>
+    <string name="btn_confirm_selectcode">Confirm</string>
+    <string name="btn_read_detail">Telah Di Baca</string>
+    <string name="btn_read_detailperson">Telah Di Baca</string>
+    <string name="btn_unrelevant_detail">Tidak Relevan</string>
+    <string name="btn_unrelevant_detailperson">Tidak Relevan</string>
     <string name="cv_btn_google">Dengan Google</string>
     <string name="default_web_client_id" translatable="false">911917534554-1jopeephgj7saamtl3fb28anuifjh6qu.apps.googleusercontent.com</string>
     <string name="desc_alf_img1">Image Untuk Button Image</string>
@@ -41,6 +47,11 @@
     <string name="fh_title">Riwayat Laporan</string>
     <string name="fho_subtitle">harap masukan segala sesuatu dengan benar dan jujur</string>
     <string name="fho_title">Hai!, Silahkan pilih menu dibawah</string>
+    <string name="field_domisili_schoolprofile">Domisili Sekolah</string>
+    <string name="field_jabatan_schoolprofile">Jabatan Anda</string>
+    <string name="field_jabatan_userprofile">Jabatan Anda</string>
+    <string name="field_kepsek_schoolprofile">Nama Kepala Sekolah</string>
+    <string name="field_namasekolah_schoolprofile">Nama Sekolah</string>
     <string name="firebase_database_url" translatable="false">https://capstone-complan-default-rtdb.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">911917534554</string>
     <string name="google_api_key" translatable="false">AIzaSyBghz29k9zMz6KOIaQDImzltWQ6DFxLq4o</string>
@@ -56,16 +67,35 @@
     <string name="tab_person">Pelanggaran</string>
     <string name="title_activity_menu">Menu</string>
     <string name="title_dashboard">Dashboard</string>
+    <string name="title_domisi_schoolprofile">Domisi Sekolah</string>
+    <string name="title_domisili_notification">Domisili</string>
     <string name="title_home">Home</string>
+    <string name="title_jabatan_notification">Jabatan</string>
+    <string name="title_jabatan_schoolprofile">Jabatan</string>
+    <string name="title_jabatan_userprofile">Jabatan</string>
+    <string name="title_kepsek_notification">Kepala Sekolah</string>
+    <string name="title_kepsek_schoolprofile">Nama Kepala Sekolah</string>
+    <string name="title_kodesekolah_notification">Kode Sekolah</string>
+    <string name="title_namasekolah_notification">Nama Sekolah</string>
+    <string name="title_namasekolah_schoolprofile">Nama Sekolah</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_schoolprofile">Lengkapi profil sekolah</string>
+    <string name="title_selectcode">Masukan Kode Sekolah</string>
+    <string name="title_userprofile">Lengkapi profil anda</string>
     <string name="tv_code_school">TV_Code_School</string>
     <string name="tv_location">TV_Lokasi_Sekolah</string>
     <string name="tv_major">TV_Major</string>
     <string name="tv_name">TV_Name</string>
     <string name="tv_school_name">TV_Nama_Sekolah</string>
+    <string name="txt_atau_selectcode">atau</string>
     <string name="txt_category">Jenis Pel</string>
+    <string name="txt_category_detailperson">category</string>
     <string name="txt_desc">Isi Laporan</string>
+    <string name="txt_description_detail">Description</string>
+    <string name="txt_description_detailperson">Description</string>
     <string name="txt_email">Alamat Email</string>
+    <string name="txt_facilitylocation_detail">Facility Location</string>
+    <string name="txt_facilityname_detail">Facility Name</string>
     <string name="txt_form_warning">Mohon jangan berikan laporan palsu!</string>
     <string name="txt_hint_confirm_password">Confirm Password</string>
     <string name="txt_hint_desc">Isi deskripsi disini</string>
@@ -81,10 +111,13 @@
     <string name="txt_name">Nama</string>
     <string name="txt_or">atau</string>
     <string name="txt_password">Password</string>
+    <string name="txt_personname_detailperson">Person Name</string>
     <string name="txt_register">Daftar</string>
     <string name="txt_school_code">Kode Sekolah</string>
     <string name="txt_send">Kirim</string>
     <string name="txt_sign_out">Keluar</string>
+    <string name="txt_timestamp_detail">Laporan timestamp</string>
+    <string name="txt_timestamp_detailperson">Laporan Person Timestamp</string>
     <style name="Theme.ComPlanSchool" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/blue_dark</item>
