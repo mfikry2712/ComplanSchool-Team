@@ -4,9 +4,11 @@
     <color name="black_50">#747678</color>
     <color name="blue_dark">#2C3B98</color>
     <color name="blue_light">#5B67AE</color>
+    <color name="green">#28DF99</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="red">#FF6464</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
