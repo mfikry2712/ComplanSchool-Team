@@ -3045,6 +3045,7 @@ int id group_divider 0x7f0800f2
 int id grouping 0x7f0800f3
 int id groups 0x7f0800f4
 int id guideline 0x7f0800f5
+int id guideline4 0x7f080243
 int id header_title 0x7f0800f6
 int id hideable 0x7f0800f7
 int id home 0x7f0800f8
@@ -3201,6 +3202,7 @@ int id progress_circular 0x7f08018e
 int id progress_horizontal 0x7f08018f
 int id radio 0x7f080190
 int id ratio 0x7f080191
+int id rc_RiwayatLaporan 0x7f080244
 int id rc_RiwayatLaporanFa 0x7f080192
 int id rc_RiwayatLaporanOk 0x7f080193
 int id rectangles 0x7f080194
@@ -3278,6 +3280,7 @@ int id submenuarrow 0x7f0801db
 int id submit_area 0x7f0801dc
 int id supportScrollUp 0x7f0801dd
 int id tabMode 0x7f0801de
+int id tabs 0x7f080245
 int id tag_accessibility_actions 0x7f0801df
 int id tag_accessibility_clickable_spans 0x7f0801e0
 int id tag_accessibility_heading 0x7f0801e1
@@ -3308,7 +3311,6 @@ int id textView4 0x7f0801f9
 int id textView5 0x7f0801fa
 int id textView7 0x7f0801fb
 int id textView8 0x7f0801fc
-int id text_dashboard 0x7f0801fd
 int id text_input_end_icon 0x7f0801fe
 int id text_input_error_icon 0x7f0801ff
 int id text_input_start_icon 0x7f080200
@@ -3348,6 +3350,7 @@ int id tv_pos 0x7f080221
 int id tv_principal 0x7f080222
 int id tv_schoolCode 0x7f080223
 int id tv_schoolName 0x7f080224
+int id tv_status 0x7f080247
 int id tv_tanggal 0x7f080225
 int id unchecked 0x7f080226
 int id uniform 0x7f080227
@@ -3356,6 +3359,7 @@ int id up 0x7f080229
 int id useLogo 0x7f08022a
 int id vertical_only 0x7f08022b
 int id view_offset_helper 0x7f08022c
+int id view_pager 0x7f080246
 int id view_transition 0x7f08022d
 int id view_tree_lifecycle_owner 0x7f08022e
 int id view_tree_on_back_pressed_dispatcher_owner 0x7f08022f
@@ -3532,7 +3536,10 @@ int layout design_text_input_start_icon 0x7f0b0038
 int layout fragment_dashboard 0x7f0b0039
 int layout fragment_home 0x7f0b003a
 int layout fragment_notifications 0x7f0b003b
+int layout fragment_status_fasilitas 0x7f0b0081
+int layout fragment_status_person 0x7f0b0082
 int layout item_history 0x7f0b003c
+int layout item_history_status 0x7f0b0083
 int layout laporan_item_row 0x7f0b003d
 int layout m3_alert_dialog 0x7f0b003e
 int layout m3_alert_dialog_actions 0x7f0b003f
@@ -3705,6 +3712,7 @@ int string google_api_key 0x7f12005e
 int string google_app_id 0x7f12005f
 int string google_crash_reporting_api_key 0x7f120060
 int string google_storage_bucket 0x7f120061
+int string hello_blank_fragment 0x7f1200ea
 int string hide_bottom_view_on_scroll_behavior 0x7f120062
 int string icon_content_description 0x7f120063
 int string ih_category 0x7f120064

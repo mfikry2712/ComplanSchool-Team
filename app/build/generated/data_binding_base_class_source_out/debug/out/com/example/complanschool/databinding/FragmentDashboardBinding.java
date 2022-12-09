@@ -8,9 +8,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import androidx.viewpager2.widget.ViewPager2;
 import com.example.complanschool.R;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,12 +23,29 @@ public final class FragmentDashboardBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView textDashboard;
+  public final Guideline guideline4;
+
+  @NonNull
+  public final TabLayout tabs;
+
+  @NonNull
+  public final TextView textView;
+
+  @NonNull
+  public final TextView textView2;
+
+  @NonNull
+  public final ViewPager2 viewPager;
 
   private FragmentDashboardBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView textDashboard) {
+      @NonNull Guideline guideline4, @NonNull TabLayout tabs, @NonNull TextView textView,
+      @NonNull TextView textView2, @NonNull ViewPager2 viewPager) {
     this.rootView = rootView;
-    this.textDashboard = textDashboard;
+    this.guideline4 = guideline4;
+    this.tabs = tabs;
+    this.textView = textView;
+    this.textView2 = textView2;
+    this.viewPager = viewPager;
   }
 
   @Override
@@ -55,13 +75,38 @@ public final class FragmentDashboardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.text_dashboard;
-      TextView textDashboard = ViewBindings.findChildViewById(rootView, id);
-      if (textDashboard == null) {
+      id = R.id.guideline4;
+      Guideline guideline4 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline4 == null) {
         break missingId;
       }
 
-      return new FragmentDashboardBinding((ConstraintLayout) rootView, textDashboard);
+      id = R.id.tabs;
+      TabLayout tabs = ViewBindings.findChildViewById(rootView, id);
+      if (tabs == null) {
+        break missingId;
+      }
+
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.view_pager;
+      ViewPager2 viewPager = ViewBindings.findChildViewById(rootView, id);
+      if (viewPager == null) {
+        break missingId;
+      }
+
+      return new FragmentDashboardBinding((ConstraintLayout) rootView, guideline4, tabs, textView,
+          textView2, viewPager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

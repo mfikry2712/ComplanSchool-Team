@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.complan.dataclass.DataLaporanPerson
+import com.example.complanschool.dataclass.DataLaporanPerson
 import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityListLaporanPersonBinding
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -23,7 +23,6 @@ class ListLaporanPerson : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var db: FirebaseDatabase
     private lateinit var dbi: DatabaseReference
-    private lateinit var dbo: DatabaseReference
     private lateinit var kd : String
 
     private val adapterObs = MutableLiveData<ListLaporanPersonAdapter>()
@@ -34,7 +33,7 @@ class ListLaporanPerson : AppCompatActivity() {
         binding = ActivityListLaporanPersonBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val msgRef = MutableLiveData<DatabaseReference>()
+        val msgRef = MutableLiveData<Query>()
         auth = Firebase.auth
         db = Firebase.database
         val firebaseUser = auth.currentUser
@@ -56,8 +55,10 @@ class ListLaporanPerson : AppCompatActivity() {
             msgRef.value = db.reference.child("kode_sekolah")
                 .child(kd) .child("Laporan")
                 .child("Laporan Orang")
+                .orderByChild("status")
+                .equalTo(false)
         }.addOnFailureListener{
-            Log.d("kesalahan", it.message.toString())
+            Log.d("error : ", it.message.toString())
         }
         msgRef.observe(this){
 

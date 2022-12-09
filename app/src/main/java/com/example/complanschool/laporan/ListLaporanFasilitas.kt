@@ -6,16 +6,15 @@ import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.complan.dataclass.DataLaporanFasilitas
-import com.example.complan.dataclass.DataLaporanPerson
+import com.example.complanschool.dataclass.DataLaporanFasilitas
 import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityListLaporanFasilitasBinding
-import com.example.complanschool.databinding.ActivityListLaporanPersonBinding
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.Query
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -36,7 +35,7 @@ class ListLaporanFasilitas : AppCompatActivity() {
         binding = ActivityListLaporanFasilitasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val msgRef = MutableLiveData<DatabaseReference>()
+        val msgRef = MutableLiveData<Query>()
         auth = Firebase.auth
         db = Firebase.database
         val firebaseUser = auth.currentUser
@@ -55,6 +54,8 @@ class ListLaporanFasilitas : AppCompatActivity() {
             msgRef.value = db.reference.child("kode_sekolah")
                 .child(kd).child("Laporan")
                 .child("Laporan Fasilitas")
+                .orderByChild("status")
+                .equalTo(false)
         }
         msgRef.observe(this){
 

@@ -132,4 +132,7 @@
     <string name="title_kepsek_notification">Kepala Sekolah</string>
     <string name="title_domisili_notification">Domisili</string>
     <string name="title_namasekolah_notification">Nama Sekolah</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
