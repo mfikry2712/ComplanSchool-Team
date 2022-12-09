@@ -3,8 +3,8 @@ package com.example.complanschool
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.complanschool.ui.dashboard.FragmentStatusFasilitas
-import com.example.complanschool.ui.dashboard.FragmentStatusPerson
+import com.example.complanschool.ui.status.FragmentStatusFasilitas
+import com.example.complanschool.ui.status.FragmentStatusPerson
 
 class SectionsPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity){
 
