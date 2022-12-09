@@ -1395,6 +1395,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -1897,6 +1898,7 @@ color primary_text_disabled_material_light
 color purple_200
 color purple_500
 color purple_700
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -2662,6 +2664,8 @@ drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable custom_button
 drawable custom_button_active
+drawable custom_button_detail_activity
+drawable custom_button_detail_false_activity
 drawable custom_button_menu
 drawable custom_buttongoogle
 drawable custom_edittext
@@ -2685,7 +2689,9 @@ drawable googleg_standard_color_18
 drawable ic_account
 drawable ic_account_circle_navigation
 drawable ic_account_onclick
+drawable ic_assigment
 drawable ic_back
+drawable ic_baseline_arrow_back_24
 drawable ic_clock_black_24dp
 drawable ic_dashboard_black_24dp
 drawable ic_google
@@ -2715,6 +2721,7 @@ drawable ic_notifications_black_24dp
 drawable ic_riwayat
 drawable ic_see_password
 drawable image_menu_2
+drawable image_school
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2901,11 +2908,14 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnConfirmCode
+id btnDelete
 id btnGoogle
 id btnLogin
 id btnNoCode
+id btnRead
 id btnSend
 id btnSendSignUp
+id btnSignOut
 id btnSignUp
 id btnToLaporanFacility
 id btnToLaporanPerson
@@ -2916,6 +2926,7 @@ id cancel_action
 id cancel_button
 id card_view
 id carryVelocity
+id category
 id center
 id centerCrop
 id centerInside
@@ -3005,6 +3016,9 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id facilityImage
+id facilityLocation
+id facilityName
 id fade
 id fill
 id fill_horizontal
@@ -3046,6 +3060,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id img_item_photo
 id immediateStop
 id included
@@ -3058,6 +3073,8 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
+id laporanDecription
+id laporanTimestamp
 id layout
 id left
 id leftToRight
@@ -3175,6 +3192,8 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id personImage
+id personName
 id pin
 id position
 id postLayout
@@ -3194,7 +3213,6 @@ id right_side
 id rounded
 id row_index_key
 id rtl
-id rv_laporan
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3204,6 +3222,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -3281,15 +3300,19 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
+id textView12
+id textView15
+id textView2
 id textView3
 id textView4
 id textView5
+id textView7
 id textView8
 id text_dashboard
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_notifications
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3301,6 +3324,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3313,11 +3337,18 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tv_Alamat
+id tv_Image
 id tv_NamaSekolah
+id tv_domicile
 id tv_item_description
 id tv_item_name
 id tv_jenis2
 id tv_namaSuspect
+id tv_name
+id tv_pos
+id tv_principal
+id tv_schoolCode
+id tv_schoolName
 id tv_tanggal
 id unchecked
 id uniform
@@ -3470,9 +3501,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detail_laporan_fasilitas
+layout activity_detail_laporan_person
 layout activity_input_school_profile
 layout activity_input_user_profile
-layout activity_list_laporan
 layout activity_list_laporan_fasilitas
 layout activity_list_laporan_person
 layout activity_login

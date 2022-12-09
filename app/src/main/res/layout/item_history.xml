@@ -17,7 +17,7 @@
         android:padding="8dp">
 
         <ImageView
-            android:id="@+id/tv_facilityImage"
+            android:id="@+id/tv_Image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:transitionName="story_image"
@@ -33,8 +33,8 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginStart="10dp"
-            card_view:layout_constraintStart_toEndOf="@+id/tv_facilityImage"
-            card_view:layout_constraintTop_toTopOf="@+id/tv_facilityImage"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_Image"
+            card_view:layout_constraintTop_toTopOf="@+id/tv_Image"
             tools:text="@string/ih_name" />
 
         <TextView
@@ -44,7 +44,7 @@
             android:layout_marginTop="5dp"
             android:textSize="16sp"
             android:layout_marginStart="10dp"
-            card_view:layout_constraintStart_toEndOf="@+id/tv_facilityImage"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_Image"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_namaSuspect"
             tools:text="@string/ih_category" />
 

@@ -4,6 +4,7 @@ package com.example.complanschool.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,6 +24,9 @@ public final class ItemHistoryBinding implements ViewBinding {
   public final CardView cardView;
 
   @NonNull
+  public final ImageView tvImage;
+
+  @NonNull
   public final TextView tvJenis2;
 
   @NonNull
@@ -32,9 +36,11 @@ public final class ItemHistoryBinding implements ViewBinding {
   public final TextView tvTanggal;
 
   private ItemHistoryBinding(@NonNull CardView rootView, @NonNull CardView cardView,
-      @NonNull TextView tvJenis2, @NonNull TextView tvNamaSuspect, @NonNull TextView tvTanggal) {
+      @NonNull ImageView tvImage, @NonNull TextView tvJenis2, @NonNull TextView tvNamaSuspect,
+      @NonNull TextView tvTanggal) {
     this.rootView = rootView;
     this.cardView = cardView;
+    this.tvImage = tvImage;
     this.tvJenis2 = tvJenis2;
     this.tvNamaSuspect = tvNamaSuspect;
     this.tvTanggal = tvTanggal;
@@ -69,6 +75,12 @@ public final class ItemHistoryBinding implements ViewBinding {
     missingId: {
       CardView cardView = (CardView) rootView;
 
+      id = R.id.tv_Image;
+      ImageView tvImage = ViewBindings.findChildViewById(rootView, id);
+      if (tvImage == null) {
+        break missingId;
+      }
+
       id = R.id.tv_jenis2;
       TextView tvJenis2 = ViewBindings.findChildViewById(rootView, id);
       if (tvJenis2 == null) {
@@ -87,7 +99,7 @@ public final class ItemHistoryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemHistoryBinding((CardView) rootView, cardView, tvJenis2, tvNamaSuspect,
+      return new ItemHistoryBinding((CardView) rootView, cardView, tvImage, tvJenis2, tvNamaSuspect,
           tvTanggal);
     }
     String missingId = rootView.getResources().getResourceName(id);

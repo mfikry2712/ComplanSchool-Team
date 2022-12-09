@@ -13,6 +13,13 @@
         android:theme="@style/Theme.ComPlanSchool"
         tools:targetApi="31">
         <activity
+            android:name=".ui.detail.DetailLaporanPerson"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".authentication.InputSchoolProfileActivity"
             android:exported="false">
             <meta-data
@@ -28,10 +35,13 @@
         </activity>
         <activity
             android:name=".authentication.InputUserProfileActivity"
-            android:name=".ui.detail.DetailLaporanFasilitas"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name=".authentication.InputProfileActivity"
+            android:name=".ui.detail.DetailLaporanFasilitas"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -11,4 +11,7 @@
     <color name="white_fa">#FAFAFA</color>
     <color name="blue_dark">#2C3B98</color>
     <color name="blue_light">#5B67AE</color>
+    <color name="green">#28DF99</color>
+    <color name="red">#FF6464</color>
+
 </resources>
