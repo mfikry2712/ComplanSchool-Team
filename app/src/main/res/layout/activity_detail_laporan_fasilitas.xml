@@ -22,17 +22,17 @@
         app:title="Detail Laporan Fasilitas"
         app:titleTextColor="@color/black" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/facilityImage"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:layout_marginTop="12dp"
         android:transitionName="fasilitas_image"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars"/>
 
     <TextView
         android:id="@+id/facilityName"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Facility Name"
+        android:text="@string/txt_facilityname_detail"
         android:textColor="#000000"
         android:textSize="25sp"
         android:transitionName="fasilitas_name"
@@ -53,9 +53,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Facility Location"
-        android:textColor="#000000"
-        android:textSize="20sp"
+        android:text="@string/txt_facilitylocation_detail"
+        android:textSize="15sp"
         android:transitionName="fasilitas_name"
         app:layout_constraintStart_toStartOf="@+id/facilityImage"
         app:layout_constraintTop_toBottomOf="@+id/facilityName" />
@@ -66,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="ini timestamp"
+        android:text="@string/txt_timestamp_detail"
         android:textColor="#000000"
         android:textSize="15sp"
         android:transitionName="laporan_timestamp"
@@ -83,7 +82,7 @@
             android:background="@drawable/custom_button_detail_activity"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:text="Telah Di Baca"
+            android:text="@string/btn_read_detail"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +100,7 @@
             android:background="@drawable/custom_button_detail_false_activity"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:text="Tidak Relevan"
+            android:text="@string/btn_unrelevant_detail"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,12 +109,11 @@
             app:layout_constraintTop_toBottomOf="@id/scrollView2"
             app:layout_constraintVertical_bias="0.0" />
 
-        <ScrollView
+        <androidx.cardview.widget.CardView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:paddingBottom="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/facilityLocation"
@@ -132,14 +130,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:lineHeight="25dp"
-                    android:text="Description"
+                    android:text="@string/txt_description_detail"
                     android:textSize="14sp"
                     android:transitionName="laporan_description"
                     tools:targetApi="p" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-        </ScrollView>
+        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
