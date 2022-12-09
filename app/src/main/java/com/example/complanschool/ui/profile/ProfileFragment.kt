@@ -1,4 +1,4 @@
-package com.example.complanschool.ui.notifications
+package com.example.complanschool.ui.profile
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,7 +14,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
-class NotificationsFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
 private var _binding: FragmentNotificationsBinding? = null
     private lateinit var auth: FirebaseAuth

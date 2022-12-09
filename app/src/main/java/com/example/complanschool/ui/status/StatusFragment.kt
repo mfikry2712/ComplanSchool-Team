@@ -1,4 +1,4 @@
-package com.example.complanschool.ui.dashboard
+package com.example.complanschool.ui.status
 
 import android.os.Bundle
 import android.view.LayoutInflater
