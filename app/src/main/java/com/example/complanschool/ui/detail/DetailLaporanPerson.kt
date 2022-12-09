@@ -26,7 +26,7 @@ class DetailLaporanPerson : AppCompatActivity() {
     private lateinit var dbi: DatabaseReference
     private lateinit var auth: FirebaseAuth
 
-    private lateinit var photoName : String
+    //private lateinit var photoName : String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +37,7 @@ class DetailLaporanPerson : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        photoName = intent.getStringExtra("foto_person")!!
+        val photoName = intent.getStringExtra("foto_person").toString()
         val photoStorage = FirebaseStorage.getInstance().reference.child("images/$photoName")
 
         val localFile = File.createTempFile("tempImage", "jpg")
@@ -73,26 +73,27 @@ class DetailLaporanPerson : AppCompatActivity() {
         }
         dbi = FirebaseDatabase.getInstance().getReference("user_sekolah").child(firebaseUser.uid)
         binding.btnRead.setOnClickListener {
-            updateLaporan("read")
+            updateLaporan("read",photoName)
         }
 
         binding.btnDelete.setOnClickListener {
-            updateLaporan("irrelevant")
+            updateLaporan("irrelevant",photoName)
         }
 
     }
-    fun updateLaporan(status : String){
+    fun updateLaporan(status : String, photo :String){
 
         dbi.get().addOnSuccessListener { snapshot ->
             val kdSekolah = snapshot.child("schoolCode").value
-            db.child(kdSekolah.toString()).child("Laporan").child("Laporan Orang").orderByChild("photo").equalTo(photoName)
+            db.child(kdSekolah.toString()).child("Laporan").child("Laporan Orang").orderByChild("photo").equalTo(photo)
                 .addListenerForSingleValueEvent(object : ValueEventListener{
                     override fun onDataChange(snapshot: DataSnapshot) {
                         snapshot.children.forEach{
                             val key : String = it.key.toString()
                             Log.d("Tagnya",key)
                             val gas = mapOf(
-                                "status" to status
+                                "status" to true,
+                                "statusType" to status
                             )
                             db.child(kdSekolah.toString()).child("Laporan").child("Laporan Orang").child(key).updateChildren(gas)
                                 .addOnSuccessListener {

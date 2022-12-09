@@ -103,6 +103,7 @@ id emailText
 id facilityImage
 id facilityLocation
 id facilityName
+id guideline4
 id imageView
 id imageView2
 id img_item_photo
@@ -120,9 +121,11 @@ id passwordText3
 id passwordText4
 id personImage
 id personName
+id rc_RiwayatLaporan
 id rc_RiwayatLaporanFa
 id rc_RiwayatLaporanOk
 id scrollView2
+id tabs
 id textView
 id textView10
 id textView12
@@ -133,7 +136,6 @@ id textView4
 id textView5
 id textView7
 id textView8
-id text_dashboard
 id toolbar
 id tv_Alamat
 id tv_Image
@@ -149,6 +151,7 @@ id tv_principal
 id tv_schoolCode
 id tv_schoolName
 id tv_tanggal
+id view_pager
 id welcomeText
 id welcomeText2
 id welcomeText5
@@ -166,6 +169,8 @@ layout activity_select_code
 layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
+layout fragment_status_fasilitas
+layout fragment_status_person
 layout item_history
 layout laporan_item_row
 menu bottom_nav_menu
@@ -204,6 +209,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string ih_category
 string ih_name
 string ih_time

@@ -10,7 +10,9 @@ import com.bumptech.glide.Glide
 import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityDetailLaporanFasilitasBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
+import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import java.io.File
 
@@ -21,14 +23,16 @@ class DetailLaporanFasilitas : AppCompatActivity() {
     private lateinit var dbi: DatabaseReference
     private lateinit var auth: FirebaseAuth
 
-    private lateinit var photoName : String
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailLaporanFasilitasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val photoName = intent.getStringExtra("foto_fasilitas")
+        db = FirebaseDatabase.getInstance().getReference("kode_sekolah")
+
+        auth = Firebase.auth
+
+        val photoName = intent.getStringExtra("foto_fasilitas")!!
         val photoStorage = FirebaseStorage.getInstance().reference.child("images/$photoName")
 
         val localFile = File.createTempFile("tempImage","jpg")
@@ -60,26 +64,27 @@ class DetailLaporanFasilitas : AppCompatActivity() {
         }
         dbi = FirebaseDatabase.getInstance().getReference("user_sekolah").child(firebaseUser.uid)
         binding.btnRead.setOnClickListener {
-            updateLaporan("read")
+            updateLaporan("read",photoName)
         }
 
         binding.btnDelete.setOnClickListener {
-            updateLaporan("irrelevant")
+            updateLaporan("irrelevant",photoName)
         }
 
     }
-    fun updateLaporan(status : String){
+    fun updateLaporan(status : String, photo : String){
 
         dbi.get().addOnSuccessListener { snapshot ->
             val kdSekolah = snapshot.child("schoolCode").value
-            db.child(kdSekolah.toString()).child("Laporan").child("Laporan Fasilitas").orderByChild("photo").equalTo(photoName)
+            db.child(kdSekolah.toString()).child("Laporan").child("Laporan Fasilitas").orderByChild("photo").equalTo(photo)
                 .addListenerForSingleValueEvent(object : ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
                         snapshot.children.forEach{
                             val key : String = it.key.toString()
                             Log.d("Tagnya",key)
                             val gas = mapOf(
-                                "status" to status
+                                "status" to true,
+                                "statusType" to status
                             )
                             db.child(kdSekolah.toString()).child("Laporan").child("Laporan Fasilitas").child(key).updateChildren(gas)
                                 .addOnSuccessListener {

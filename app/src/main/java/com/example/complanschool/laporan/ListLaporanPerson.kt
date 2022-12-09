@@ -34,7 +34,7 @@ class ListLaporanPerson : AppCompatActivity() {
         binding = ActivityListLaporanPersonBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val msgRef = MutableLiveData<DatabaseReference>()
+        val msgRef = MutableLiveData<Query>()
         auth = Firebase.auth
         db = Firebase.database
         val firebaseUser = auth.currentUser
@@ -56,6 +56,8 @@ class ListLaporanPerson : AppCompatActivity() {
             msgRef.value = db.reference.child("kode_sekolah")
                 .child(kd) .child("Laporan")
                 .child("Laporan Orang")
+                .orderByChild("status")
+                .equalTo(false)
         }.addOnFailureListener{
             Log.d("kesalahan", it.message.toString())
         }

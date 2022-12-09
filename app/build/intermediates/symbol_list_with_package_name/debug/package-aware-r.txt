@@ -3046,6 +3046,7 @@ id group_divider
 id grouping
 id groups
 id guideline
+id guideline4
 id header_title
 id hideable
 id home
@@ -3202,6 +3203,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id rc_RiwayatLaporan
 id rc_RiwayatLaporanFa
 id rc_RiwayatLaporanOk
 id rectangles
@@ -3279,6 +3281,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tabMode
+id tabs
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3309,7 +3312,6 @@ id textView4
 id textView5
 id textView7
 id textView8
-id text_dashboard
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3357,6 +3359,7 @@ id up
 id useLogo
 id vertical_only
 id view_offset_helper
+id view_pager
 id view_transition
 id view_tree_lifecycle_owner
 id view_tree_on_back_pressed_dispatcher_owner
@@ -3533,6 +3536,8 @@ layout design_text_input_start_icon
 layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
+layout fragment_status_fasilitas
+layout fragment_status_person
 layout item_history
 layout laporan_item_row
 layout m3_alert_dialog
@@ -3706,6 +3711,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string ih_category

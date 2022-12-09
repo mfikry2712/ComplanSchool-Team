@@ -2,9 +2,11 @@ package com.example.complanschool.laporan
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -15,6 +17,8 @@ import com.example.complanschool.databinding.ItemHistoryBinding
 import com.example.complanschool.ui.detail.DetailLaporanFasilitas
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
+import com.google.firebase.storage.FirebaseStorage
+import java.io.File
 
 class ListLaporanFasilitasAdapter(
     options: FirebaseRecyclerOptions<DataLaporanFasilitas>
@@ -38,9 +42,15 @@ class ListLaporanFasilitasAdapter(
     inner class MessageViewHolder(private val binding: ItemHistoryBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: DataLaporanFasilitas) {
-            Glide.with(itemView)
-                .load(item.photo)
-                .into(binding.tvImage)
+            val photoStorage = FirebaseStorage.getInstance().reference.child("images/${item.photo.toString()}")
+            val localFile = File.createTempFile("tempImage","jpg")
+            photoStorage.getFile(localFile).addOnSuccessListener {
+                val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+                binding.tvImage.setImageBitmap(bitmap)
+            }.addOnFailureListener{
+                Toast.makeText(null,"Gagal mengambil data foto", Toast.LENGTH_SHORT)
+                    .show()
+            }
             binding.tvNamaSuspect.text = item.facilityName
             if (item.timestamp != null) {
                 binding.tvTanggal.text = DateUtils.getRelativeTimeSpanString(item.timestamp)
