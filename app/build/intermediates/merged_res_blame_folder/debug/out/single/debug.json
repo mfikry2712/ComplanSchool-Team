@@ -108,6 +108,10 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_detail_laporan_fasilitas.xml"
     },
     {
+        "merged": "com.example.complanschool.app-merged_res-56:/layout_item_history_status.xml.flat",
+        "source": "com.example.complanschool.app-main-58:/layout/item_history_status.xml"
+    },
+    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_ic_back.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\ic_back.xml"
     },
@@ -136,12 +140,12 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-pngs-51:\\drawable-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.complanschool.app-merged_res-56:/layout_fragment_status_person.xml.flat",
-        "source": "com.example.complanschool.app-main-58:/layout/fragment_status_person.xml"
-    },
-    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_custom_iconmail.xml.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\custom_iconmail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\layout_item_history_status.xml.flat",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\item_history_status.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_ic_lock.xml.flat",
@@ -226,6 +230,10 @@
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\drawable_menu_image_1.png.flat",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\drawable\\menu_image_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\layout_fragment_status_person.xml.flat",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\fragment_status_person.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-merged_res-56:\\xml_backup_rules.xml.flat",

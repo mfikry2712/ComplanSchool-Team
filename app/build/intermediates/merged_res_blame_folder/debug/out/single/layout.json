@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\fragment_dashboard.xml"
     },
     {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\item_history_status.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\item_history_status.xml"
+    },
+    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_input_user_profile.xml",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_input_user_profile.xml"
     },
@@ -32,16 +36,16 @@
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_login.xml"
     },
     {
+        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/item_history_status.xml",
+        "source": "com.example.complanschool.app-main-58:/layout/item_history_status.xml"
+    },
+    {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_list_laporan_person.xml",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_list_laporan_person.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.example.complanschool.app-mergeDebugResources-55:/layout/fragment_status_person.xml",
-        "source": "com.example.complanschool.app-main-58:/layout/fragment_status_person.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\item_history.xml",
@@ -58,6 +62,10 @@
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\activity_select_code.xml",
         "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\activity_select_code.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\fragment_status_person.xml",
+        "source": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-main-58:\\layout\\fragment_status_person.xml"
     },
     {
         "merged": "C:\\Users\\Muhammad Fikry\\.gradle\\daemon\\7.4\\com.example.complanschool.app-mergeDebugResources-55:\\layout\\fragment_status_fasilitas.xml",

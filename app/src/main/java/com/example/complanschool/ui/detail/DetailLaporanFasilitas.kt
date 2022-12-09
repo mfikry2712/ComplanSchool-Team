@@ -64,11 +64,11 @@ class DetailLaporanFasilitas : AppCompatActivity() {
         }
         dbi = FirebaseDatabase.getInstance().getReference("user_sekolah").child(firebaseUser.uid)
         binding.btnRead.setOnClickListener {
-            updateLaporan("read",photoName)
+            updateLaporan("Terkonfirmasi",photoName)
         }
 
         binding.btnDelete.setOnClickListener {
-            updateLaporan("irrelevant",photoName)
+            updateLaporan("Tidak Relevan",photoName)
         }
 
     }

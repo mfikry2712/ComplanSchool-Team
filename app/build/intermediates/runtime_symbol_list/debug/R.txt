@@ -3350,6 +3350,7 @@ int id tv_pos 0x7f080221
 int id tv_principal 0x7f080222
 int id tv_schoolCode 0x7f080223
 int id tv_schoolName 0x7f080224
+int id tv_status 0x7f080247
 int id tv_tanggal 0x7f080225
 int id unchecked 0x7f080226
 int id uniform 0x7f080227
@@ -3538,6 +3539,7 @@ int layout fragment_notifications 0x7f0b003b
 int layout fragment_status_fasilitas 0x7f0b0081
 int layout fragment_status_person 0x7f0b0082
 int layout item_history 0x7f0b003c
+int layout item_history_status 0x7f0b0083
 int layout laporan_item_row 0x7f0b003d
 int layout m3_alert_dialog 0x7f0b003e
 int layout m3_alert_dialog_actions 0x7f0b003f

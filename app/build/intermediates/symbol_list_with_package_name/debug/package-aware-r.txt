@@ -3351,6 +3351,7 @@ id tv_pos
 id tv_principal
 id tv_schoolCode
 id tv_schoolName
+id tv_status
 id tv_tanggal
 id unchecked
 id uniform
@@ -3539,6 +3540,7 @@ layout fragment_notifications
 layout fragment_status_fasilitas
 layout fragment_status_person
 layout item_history
+layout item_history_status
 layout laporan_item_row
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
