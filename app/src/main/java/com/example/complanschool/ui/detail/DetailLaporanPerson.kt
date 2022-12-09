@@ -6,10 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.bumptech.glide.Glide
-import com.example.complan.dataclass.DataLaporanPerson
 import com.example.complanschool.authentication.LoginActivity
-import com.example.complanschool.databinding.ActivityDetailLaporanFasilitasBinding
 import com.example.complanschool.databinding.ActivityDetailLaporanPersonBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -17,7 +14,6 @@ import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import java.io.File
-import java.util.*
 
 class DetailLaporanPerson : AppCompatActivity() {
 
@@ -25,8 +21,6 @@ class DetailLaporanPerson : AppCompatActivity() {
     private lateinit var db: DatabaseReference
     private lateinit var dbi: DatabaseReference
     private lateinit var auth: FirebaseAuth
-
-    private lateinit var photoName : String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +31,7 @@ class DetailLaporanPerson : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        photoName = intent.getStringExtra("foto_person")!!
+        val photoName = intent.getStringExtra("foto_person").toString()
         val photoStorage = FirebaseStorage.getInstance().reference.child("images/$photoName")
 
         val localFile = File.createTempFile("tempImage", "jpg")
@@ -59,7 +53,7 @@ class DetailLaporanPerson : AppCompatActivity() {
             onBackPressed()
         }
         binding.category.text = intent.getStringExtra("kategori")
-        binding.personName.text = intent.getStringExtra("nama_person");
+        binding.personName.text = intent.getStringExtra("nama_person")
         binding.laporanDecription.text = intent.getStringExtra("dekripsi")
         binding.laporanTimestamp.text = intent.getStringExtra("timestamp")
 
@@ -73,32 +67,33 @@ class DetailLaporanPerson : AppCompatActivity() {
         }
         dbi = FirebaseDatabase.getInstance().getReference("user_sekolah").child(firebaseUser.uid)
         binding.btnRead.setOnClickListener {
-            updateLaporan("read")
+            updateLaporan("Terkonfirmasi",photoName)
         }
 
         binding.btnDelete.setOnClickListener {
-            updateLaporan("irrelevant")
+            updateLaporan("Tidak Relevan",photoName)
         }
 
     }
-    fun updateLaporan(status : String){
+    private fun updateLaporan(status : String, photo :String){
 
         dbi.get().addOnSuccessListener { snapshot ->
             val kdSekolah = snapshot.child("schoolCode").value
-            db.child(kdSekolah.toString()).child("Laporan").child("Laporan Orang").orderByChild("photo").equalTo(photoName)
+            db.child(kdSekolah.toString()).child("Laporan").child("Laporan Orang").orderByChild("photo").equalTo(photo)
                 .addListenerForSingleValueEvent(object : ValueEventListener{
                     override fun onDataChange(snapshot: DataSnapshot) {
                         snapshot.children.forEach{
                             val key : String = it.key.toString()
-                            Log.d("Tagnya",key)
+                            Log.d("Tag",key)
                             val gas = mapOf(
-                                "status" to status
+                                "status" to true,
+                                "statusType" to status
                             )
                             db.child(kdSekolah.toString()).child("Laporan").child("Laporan Orang").child(key).updateChildren(gas)
                                 .addOnSuccessListener {
                                     Toast.makeText(this@DetailLaporanPerson,"Berhasil",Toast.LENGTH_SHORT).show()
                                 }.addOnFailureListener{
-                                    Toast.makeText(this@DetailLaporanPerson,"Terjadi Error",Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(this@DetailLaporanPerson,"Error",Toast.LENGTH_SHORT).show()
                                 }
                         }
                     }

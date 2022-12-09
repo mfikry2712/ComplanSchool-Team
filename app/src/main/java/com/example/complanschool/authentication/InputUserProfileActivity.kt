@@ -1,6 +1,6 @@
 package com.example.complanschool.authentication
 
-import com.example.complan.dataclass.UserProfile
+import com.example.complanschool.dataclass.UserProfile
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -16,7 +16,6 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import kotlin.streams.asSequence
 
 class InputUserProfileActivity : AppCompatActivity() {
 

@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.example.complan.dataclass.UserProfile
+import com.example.complanschool.dataclass.UserProfile
 import com.example.complanschool.Menu
 import com.example.complanschool.R
 import com.example.complanschool.databinding.ActivityInputSchoolProfileBinding
