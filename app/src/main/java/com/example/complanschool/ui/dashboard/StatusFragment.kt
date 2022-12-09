@@ -13,7 +13,7 @@ import com.example.complanschool.databinding.FragmentDashboardBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-class DashboardFragment : Fragment() {
+class StatusFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null
     private val binding get() = _binding!!
