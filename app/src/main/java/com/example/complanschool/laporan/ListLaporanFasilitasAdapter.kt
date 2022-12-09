@@ -40,7 +40,7 @@ class ListLaporanFasilitasAdapter(
         fun bind(item: DataLaporanFasilitas) {
             Glide.with(itemView)
                 .load(item.photo)
-                .into(binding.tvFacilityImage)
+                .into(binding.tvImage)
             binding.tvNamaSuspect.text = item.facilityName
             if (item.timestamp != null) {
                 binding.tvTanggal.text = DateUtils.getRelativeTimeSpanString(item.timestamp)
@@ -52,13 +52,14 @@ class ListLaporanFasilitasAdapter(
                 val intent = Intent(itemView.context, DetailLaporanFasilitas::class.java)
                 intent.putExtra("nama_fasilitas", item.facilityName)
                 intent.putExtra("foto_fasilitas", item.photo)
+                intent.putExtra("lokasi_fasilitas", item.facilityLocation)
                 intent.putExtra("dekripsi", item.description)
                 intent.putExtra("timestamp", timestamp)
 
                 val optionsCompat: ActivityOptionsCompat =
                     ActivityOptionsCompat.makeSceneTransitionAnimation(
                         itemView.context as Activity,
-                        androidx.core.util.Pair(binding.tvFacilityImage, "fasilitas_image"),
+                        androidx.core.util.Pair(binding.tvImage, "fasilitas_image"),
                         androidx.core.util.Pair(binding.tvNamaSuspect, "fasilitas_name"),
                         androidx.core.util.Pair(binding.tvJenis2, "laporan_description"),
                         androidx.core.util.Pair(binding.tvTanggal, "laporan_timestamp"),

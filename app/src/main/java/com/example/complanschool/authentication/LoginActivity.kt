@@ -91,7 +91,7 @@ class LoginActivity : AppCompatActivity() {
 
         // Initialize Firebase Auth
         auth = Firebase.auth
-        authReference = FirebaseDatabase.getInstance().getReference("user")
+        authReference = FirebaseDatabase.getInstance().getReference("user_sekolah")
 
         btnGoogle.setOnClickListener {
             signIn()

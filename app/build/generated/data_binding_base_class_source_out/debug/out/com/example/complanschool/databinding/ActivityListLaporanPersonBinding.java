@@ -4,6 +4,7 @@ package com.example.complanschool.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -22,10 +23,19 @@ public final class ActivityListLaporanPersonBinding implements ViewBinding {
   @NonNull
   public final RecyclerView rcRiwayatLaporanOk;
 
+  @NonNull
+  public final TextView textView;
+
+  @NonNull
+  public final TextView textView3;
+
   private ActivityListLaporanPersonBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView rcRiwayatLaporanOk) {
+      @NonNull RecyclerView rcRiwayatLaporanOk, @NonNull TextView textView,
+      @NonNull TextView textView3) {
     this.rootView = rootView;
     this.rcRiwayatLaporanOk = rcRiwayatLaporanOk;
+    this.textView = textView;
+    this.textView3 = textView3;
   }
 
   @Override
@@ -61,7 +71,20 @@ public final class ActivityListLaporanPersonBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityListLaporanPersonBinding((ConstraintLayout) rootView, rcRiwayatLaporanOk);
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
+        break missingId;
+      }
+
+      return new ActivityListLaporanPersonBinding((ConstraintLayout) rootView, rcRiwayatLaporanOk,
+          textView, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
