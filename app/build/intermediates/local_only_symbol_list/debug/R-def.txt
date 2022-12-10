@@ -22,6 +22,7 @@ drawable bg_home
 drawable bg_home1
 drawable bg_lapor
 drawable bg_lapor1
+drawable bg_lapor3
 drawable bg_login
 drawable building_high_school
 drawable custom_button
@@ -90,6 +91,7 @@ id btnToLaporanPerson
 id card_view
 id category
 id container
+id cv
 id edtCodeConfirm
 id edtConfirmPassword
 id edtDomicile
@@ -129,7 +131,6 @@ id tabs
 id textView
 id textView10
 id textView12
-id textView15
 id textView2
 id textView3
 id textView4
@@ -137,6 +138,7 @@ id textView5
 id textView7
 id textView8
 id toolbar
+id toolbar_title
 id tv_Alamat
 id tv_Image
 id tv_NamaSekolah
@@ -186,6 +188,8 @@ string al_title
 string alf_facility_location
 string alf_facility_name
 string alf_title
+string allf_title
+string allp_title
 string alp_person_category
 string alp_person_name
 string alp_title
@@ -245,6 +249,9 @@ string title_namasekolah_schoolprofile
 string title_notifications
 string title_schoolprofile
 string title_selectcode
+string title_statuslaporan
+string title_toolbar_detaillaporanfasilitas
+string title_toolbar_detaillaporanperson
 string title_userprofile
 string tv_code_school
 string tv_location
@@ -273,6 +280,8 @@ string txt_hint_school_code
 string txt_login
 string txt_major
 string txt_name
+string txt_nav_profil
+string txt_nav_status
 string txt_or
 string txt_password
 string txt_personname_detailperson

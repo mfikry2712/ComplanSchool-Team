@@ -41,7 +41,7 @@
         android:autofillHints=""
         android:background="@drawable/custom_edittext_report"
         android:ems="10"
-        android:hint="@string/txt_hint_name_facility"
+        android:hint="@string/title_kodesekolah_notification"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:padding="10dp"

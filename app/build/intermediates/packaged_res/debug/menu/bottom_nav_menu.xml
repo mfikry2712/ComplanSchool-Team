@@ -9,11 +9,11 @@
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_assigment"
-        android:title="Tertinjau"/>
+        android:title="@string/txt_nav_status"/>
 
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_account_circle_navigation"
-        android:title="Profil"/>
+        android:title="@string/txt_nav_profil"/>
 
 </menu>
