@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
+            android:layout_marginTop="5dp"
             android:autofillHints=""
             android:background="@drawable/custom_edittext"
             android:drawableStart="@drawable/custom_iconjurusan"
@@ -61,21 +62,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edtSchoolName" />
 
-        <TextView
-            android:id="@+id/welcomeText"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:text="@string/title_schoolprofile"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.057" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_schoolprofile"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.appcompat.widget.Toolbar>
 
         <TextView
             android:id="@+id/passwordText4"
@@ -105,23 +114,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.075"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcomeText2" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-        <TextView
-            android:id="@+id/welcomeText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:text="@string/aip_subtitle"
-            android:textColor="@color/black_50"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.275"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcomeText"
-            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/edtName"
@@ -129,6 +123,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
+            android:layout_marginTop="5dp"
             android:autofillHints=""
             android:background="@drawable/custom_edittext"
             android:drawableStart="@drawable/custom_iconaccount"
@@ -151,9 +146,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="28dp"
-            android:layout_marginBottom="100dp"
             android:text="@string/txt_send"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -167,6 +161,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
+            android:layout_marginTop="5dp"
             android:autofillHints=""
             android:background="@drawable/custom_edittext"
             android:drawableStart="@drawable/custom_iconkode"
@@ -203,6 +198,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
+            android:layout_marginTop="5dp"
             android:autofillHints=""
             android:background="@drawable/custom_edittext"
             android:drawableStart="@drawable/custom_iconkode"
@@ -224,6 +220,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
+            android:layout_marginTop="5dp"
             android:autofillHints=""
             android:background="@drawable/custom_edittext"
             android:drawableStart="@drawable/custom_iconkode"
