@@ -34,21 +34,17 @@ class MainActivity : AppCompatActivity() {
             Handler(Looper.getMainLooper()).postDelayed({
                 authReference.child(firebaseUser.uid).get().addOnSuccessListener{
                     if (it.exists()){
-                        val o = Intent(this@MainActivity,  Menu::class.java)
-                        startActivity(o)
+                        startActivity(Intent(this@MainActivity,  Menu::class.java))
                     }else{
-                        val o = Intent(this@MainActivity,  SelectCode::class.java)
-                        startActivity(o)
+                        startActivity(Intent(this@MainActivity,  SelectCode::class.java))
                     }
                 }.addOnFailureListener{
                     Log.d("Error Failure",it.message.toString())
                 }
                 finish()
-            }, delayMillis)
+            }, 2000)
 
         }}
 
-    companion object{
-        const val delayMillis : Long = 2000
-    }
+
 }
