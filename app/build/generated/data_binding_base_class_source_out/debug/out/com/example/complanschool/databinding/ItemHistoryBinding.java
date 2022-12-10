@@ -4,7 +4,6 @@ package com.example.complanschool.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +11,7 @@ import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.complanschool.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,7 +24,7 @@ public final class ItemHistoryBinding implements ViewBinding {
   public final CardView cardView;
 
   @NonNull
-  public final ImageView tvImage;
+  public final CircleImageView tvImage;
 
   @NonNull
   public final TextView tvJenis2;
@@ -36,7 +36,7 @@ public final class ItemHistoryBinding implements ViewBinding {
   public final TextView tvTanggal;
 
   private ItemHistoryBinding(@NonNull CardView rootView, @NonNull CardView cardView,
-      @NonNull ImageView tvImage, @NonNull TextView tvJenis2, @NonNull TextView tvNamaSuspect,
+      @NonNull CircleImageView tvImage, @NonNull TextView tvJenis2, @NonNull TextView tvNamaSuspect,
       @NonNull TextView tvTanggal) {
     this.rootView = rootView;
     this.cardView = cardView;
@@ -76,7 +76,7 @@ public final class ItemHistoryBinding implements ViewBinding {
       CardView cardView = (CardView) rootView;
 
       id = R.id.tv_Image;
-      ImageView tvImage = ViewBindings.findChildViewById(rootView, id);
+      CircleImageView tvImage = ViewBindings.findChildViewById(rootView, id);
       if (tvImage == null) {
         break missingId;
       }

@@ -2638,6 +2638,7 @@ drawable bg_home
 drawable bg_home1
 drawable bg_lapor
 drawable bg_lapor1
+drawable bg_lapor3
 drawable bg_login
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -2966,6 +2967,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id cv
 id dark
 id date_picker_actions
 id decelerate
@@ -3310,7 +3312,6 @@ id textTop
 id textView
 id textView10
 id textView12
-id textView15
 id textView2
 id textView3
 id textView4
@@ -3332,6 +3333,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbar_title
 id top
 id topPanel
 id touch_outside
@@ -3654,6 +3656,8 @@ string al_title
 string alf_facility_location
 string alf_facility_name
 string alf_title
+string allf_title
+string allp_title
 string alp_person_category
 string alp_person_name
 string alp_title
@@ -3851,6 +3855,9 @@ string title_namasekolah_schoolprofile
 string title_notifications
 string title_schoolprofile
 string title_selectcode
+string title_statuslaporan
+string title_toolbar_detaillaporanfasilitas
+string title_toolbar_detaillaporanperson
 string title_userprofile
 string tv_code_school
 string tv_location
@@ -3879,6 +3886,8 @@ string txt_hint_school_code
 string txt_login
 string txt_major
 string txt_name
+string txt_nav_profil
+string txt_nav_status
 string txt_or
 string txt_password
 string txt_personname_detailperson

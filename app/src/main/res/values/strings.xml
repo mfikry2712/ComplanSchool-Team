@@ -62,7 +62,7 @@
 
     //Untuk Fragment Home
     <string name="fho_title">Hai!, Silahkan pilih menu dibawah</string>
-    <string name="fho_subtitle">harap masukan segala sesuatu dengan benar dan jujur</string>
+    <string name="fho_subtitle">harap pertimbangkan segala laporan yang ada</string>
     <string name="tv_school_name">TV_Nama_Sekolah</string>
     <string name="tv_location">TV_Lokasi_Sekolah</string>
 
@@ -139,4 +139,8 @@
     <string name="title_statuslaporan">Status Laporan</string>
     <string name="txt_nav_status">Status</string>
     <string name="txt_nav_profil">Profil</string>
+
+
+    <string name="allp_title">Riwayat Laporan Oknum</string>
+    <string name="allf_title">Riwayat Laporan Fasilitas</string>
 </resources>

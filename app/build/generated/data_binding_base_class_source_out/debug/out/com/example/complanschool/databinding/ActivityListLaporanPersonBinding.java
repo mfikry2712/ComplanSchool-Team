@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -24,18 +25,18 @@ public final class ActivityListLaporanPersonBinding implements ViewBinding {
   public final RecyclerView rcRiwayatLaporanOk;
 
   @NonNull
-  public final TextView textView;
+  public final Toolbar toolbar;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView toolbarTitle;
 
   private ActivityListLaporanPersonBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView rcRiwayatLaporanOk, @NonNull TextView textView,
-      @NonNull TextView textView3) {
+      @NonNull RecyclerView rcRiwayatLaporanOk, @NonNull Toolbar toolbar,
+      @NonNull TextView toolbarTitle) {
     this.rootView = rootView;
     this.rcRiwayatLaporanOk = rcRiwayatLaporanOk;
-    this.textView = textView;
-    this.textView3 = textView3;
+    this.toolbar = toolbar;
+    this.toolbarTitle = toolbarTitle;
   }
 
   @Override
@@ -71,20 +72,20 @@ public final class ActivityListLaporanPersonBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.toolbar_title;
+      TextView toolbarTitle = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarTitle == null) {
         break missingId;
       }
 
       return new ActivityListLaporanPersonBinding((ConstraintLayout) rootView, rcRiwayatLaporanOk,
-          textView, textView3);
+          toolbar, toolbarTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
