@@ -9,13 +9,13 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.complanschool.R
 import com.example.complanschool.SectionsPagerAdapter
-import com.example.complanschool.databinding.FragmentDashboardBinding
+import com.example.complanschool.databinding.FragmentStatusBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class StatusFragment : Fragment() {
 
-    private var _binding: FragmentDashboardBinding? = null
+    private var _binding: FragmentStatusBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -23,7 +23,7 @@ class StatusFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentStatusBinding.inflate(inflater, container, false)
         return binding.root
     }
 

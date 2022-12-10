@@ -1,11 +1,13 @@
 package com.example.complanschool.laporan
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.complanschool.R
 import com.example.complanschool.dataclass.DataLaporanPerson
 import com.example.complanschool.authentication.LoginActivity
 import com.example.complanschool.databinding.ActivityListLaporanPersonBinding
@@ -28,10 +30,18 @@ class ListLaporanPerson : AppCompatActivity() {
     private val adapterObs = MutableLiveData<ListLaporanPersonAdapter>()
 
 
+    @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityListLaporanPersonBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        binding.toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
 
         val msgRef = MutableLiveData<Query>()
         auth = Firebase.auth

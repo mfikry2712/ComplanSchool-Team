@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_lapor3"
     tools:context=".ui.detail.DetailLaporanFasilitas">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,19 +15,31 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
-        app:title="Detail Laporan Fasilitas"
-        app:titleTextColor="@color/black" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <de.hdodenhof.circleimageview.CircleImageView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_toolbar_detaillaporanfasilitas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
         android:id="@+id/facilityImage"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginTop="12dp"
         android:transitionName="fasilitas_image"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +79,6 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:text="@string/txt_timestamp_detail"
-        android:textColor="#000000"
         android:textSize="15sp"
         android:transitionName="laporan_timestamp"
         app:layout_constraintEnd_toEndOf="@+id/facilityImage"
@@ -76,44 +88,41 @@
             android:id="@+id/btnRead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="30dp"
             android:background="@drawable/custom_button_detail_activity"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:layout_marginBottom="40dp"
             android:text="@string/btn_read_detail"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scrollView2" />
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/custom_button_detail_false_activity"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:layout_marginBottom="40dp"
             android:text="@string/btn_unrelevant_detail"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.761"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scrollView2"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintTop_toBottomOf="@id/scrollView2" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/facilityLocation"

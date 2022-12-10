@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.complanschool.authentication.LoginActivity
-import com.example.complanschool.databinding.FragmentNotificationsBinding
+import com.example.complanschool.databinding.FragmentProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
@@ -16,7 +16,7 @@ import com.google.firebase.ktx.Firebase
 
 class ProfileFragment : Fragment() {
 
-private var _binding: FragmentNotificationsBinding? = null
+private var _binding: FragmentProfileBinding? = null
     private lateinit var auth: FirebaseAuth
     private lateinit var db: DatabaseReference
     private lateinit var dbi: DatabaseReference
@@ -27,7 +27,7 @@ private var _binding: FragmentNotificationsBinding? = null
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+    _binding = FragmentProfileBinding.inflate(inflater, container, false)
     val root: View = binding.root
       auth = Firebase.auth
       val firebaseUser = auth.currentUser
